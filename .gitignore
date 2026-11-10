@@ -1,0 +1,20 @@
+# macOS
+.DS_Store
+._*
+
+# Dependencies and local caches
+node_modules/
+.cache/
+*.log
+
+# Environment secrets
+.env
+.env.*
+!.env.example
+!.env.*.example
+*.pem
+*.key
+
+# Local hosting state
+.vercel/
+.netlify/
