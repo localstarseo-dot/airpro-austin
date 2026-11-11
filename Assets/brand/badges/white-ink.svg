@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg">
+  <filter id="white" color-interpolation-filters="sRGB">
+    <feColorMatrix type="matrix" values="0 0 0 0 1
+                                         0 0 0 0 1
+                                         0 0 0 0 1
+                                         3 0 0 0 -0.65" result="ink"/>
+    <feComposite in="ink" in2="SourceGraphic" operator="in"/>
+  </filter>
+</svg>
