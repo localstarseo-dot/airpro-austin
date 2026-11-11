@@ -1,0 +1,3 @@
+.service-photo-selection-gallery { grid-template-columns: repeat(2, minmax(0, 1fr)); max-width: 900px; margin-inline: auto; }
+.service-photo-selection-gallery img { aspect-ratio: 16 / 10; object-fit: cover; }
+@media (max-width: 760px) { .service-photo-selection-gallery { grid-template-columns: 1fr; } }

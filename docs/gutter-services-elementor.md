@@ -1,0 +1,25 @@
+# Gutter Services Elementor Free handoff
+
+Recreate the existing production route using native Containers and installed form/review integrations. This local prototype is not an Elementor import or verified WordPress migration. Use its exact HTML copy subject to business approval; do not embed the entire page in one HTML widget.
+
+Match the approved family: Montserrat headings, Inter body, navy #0B2D5B, teal #00B4B6, light blue #E6F6FF and white. Content width approximately 1,280 px, responsive side padding, 50–88 px section spacing, existing buttons/cards. Global header/footer/sticky actions retain existing ownership. Scoped local styles: styles/gutter-services.css.
+
+| Section / hooks | Native widgets, responsive settings and behavior |
+|---|---|
+| Hero `.duct-hero` | Full-width 01_gutter_rinsing.webp background with navy overlay. Centered compact H1 Heading, large Text Editor paragraph, intro, two Buttons and four transparent badge Images matching Air Duct. Wrap badges on mobile. Confirm credentials/profiles before launch. |
+| Checklist `.service-trust-viewport` | Light blue six-topic Icon List. Static wrapping list fallback when accessible motion/reduced-motion support is unavailable. Topics are not one package of inclusions. |
+| Warning signs `.duct-sign-grid` | White centered eyebrow/H2/intro and four icon/H3/Text cards. Four columns desktop, two tablet, one mobile. |
+| What to Expect `.duct-inclusions` | Light blue two-column service summaries and Image (03_leaf_and_debris_removal.webp); three H3 summaries for cleaning, repair and installation. Three white process cards below. Stack on mobile. Confirm exact scope. |
+| Pricing `.gutter-quote-grid` | White centered H2/intro with three quote cards, one column mobile. Service pill, Request a Quote H3 at 22–26 px, brief copy, REQUEST PRICING and terms. Cleaning has teal accent, navy text. Buttons target #book and select cleaning/repair/installation inquiry. |
+| Photos `.gutter-service-gallery` | Navy Container, centered eyebrow/H2/intro, two equal landscape Images with white/navy title bars, supporting H3 and two sentences, then native Image Carousel. Two visible desktop, one mobile; four selected photos, 3,000 ms interval, dots/swipe, no visible photo Pause button per standing user pattern. Local carousel stops at end, pauses on hover/focus/reduced motion. Manual carousel/static Images fallback if native widget cannot provide equivalent accessible behavior. No matched comparison images available, so no range widget needed. |
+| Reviews `#gutter-google-reviews` | Separate white Container and light gray general-feedback cards, Google logo, up to four desktop. Existing review integration: 3-second sliding, keyboard/swipe, Pause/Play, reduced motion. Manual fallback. Verify source/attribution. |
+| Local `.gutter-city-grid` | Light blue centered H2/intro and six white city labels, three desktop/two mobile/one narrow. One centered Check Service Availability Button to #book. Do not link gutter visitors to air-duct-only city pages. |
+| FAQs/contact `.duct-faq`, `#book` | White native Accordion with four H3 questions; same eighth outer section includes navy Contact Us and centered white form capped near 620 px. Wrapper ID book with sticky-header scroll offset. |
+
+Form: Information → Address → Service. Main service Gutter Services; inquiry selector in existing Service step: Not Sure, Gutter Cleaning, Gutter Repair, Gutter Installation. All visible/editable, Back preserves values, optional notes, no measurements/roof photos required. General Book links reset inquiry to Not Sure; pricing buttons select the matching inquiry. Local values: service=gutter; gutter_inquiry=not-sure|cleaning|repair|installation. Map these explicitly to the approved WordPress form/CRM, consent, spam protection and delivery. Final action Request My Appointment, not instant confirmation. Demo sends nothing.
+
+Media source: Assets/brand/photos/gutter-services/. Map approved images to verified Media Library URLs, preserve actual alt text, dimensions and crops. Selected four concept images depict rinsing, debris removal, downspout inspection and vacuum cleaning. Gutter-guard photo excluded because that offering is not confirmed. Do not label supplied concepts as documented customer projects. Genuine work images, methods, scope and credentials need approval before publication. No new Elementor Pro or premium widget requirement is assumed.
+
+## Latest photo revision
+
+JC supplied three numbered Before/After SVG pairs after the initial build. Extracted the embedded photographs and optimized six WebPs, preserving SVG originals. The lower carousel now shows those six photos in pair order; two technician cards, hero and What to Expect photos remain unchanged. Same two-image desktop/one-image mobile, 3-second switching and dots. This supersedes the earlier four-technician-photo carousel and unavailable-pairs notes. Pair 03 shows a visibly changed gutter/downspout, so it is described as before/after service, not a cleaning-only result. Concepts are not documented customer work; no job/location/guarantee is inferred. Native Image Carousel mapping remains unchanged.

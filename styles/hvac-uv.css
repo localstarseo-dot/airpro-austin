@@ -1,0 +1,101 @@
+.uv-page .duct-hero {
+  background: linear-gradient(90deg, #071f41df, #103973cd, #071f41b8),
+    url("../Assets/brand/photos/hvac-uv/04_rooftop_hvac_service.webp") center 46% / cover no-repeat,
+    var(--ap-navy);
+}
+
+
+.uv-page .service-trust-viewport:focus-within .service-trust-track { animation-play-state: paused; }
+.uv-page .service-trust-viewport:focus-visible { outline: 2px solid #00888b; outline-offset: -2px; }
+.uv-page .duct-scope-photo { object-position: center 48%; }
+
+.uv-page .uv-quote-grid {
+  grid-template-columns: minmax(0, 1fr);
+  max-width: 470px;
+}
+.uv-page .duct-price-card .uv-quote-title {
+  font-size: clamp(22px, 2.2vw, 26px);
+}
+.uv-page .uv-quote-grid .duct-checks {
+  width: fit-content;
+  margin: 0 auto 22px;
+  text-align: left;
+}
+.uv-page .uv-quote-grid .duct-checks li { padding-block: 5px; background-position: left 8px; }
+
+.uv-page .uv-service-gallery img {
+  aspect-ratio: 16 / 10;
+  object-position: center 55%;
+}
+.uv-page .duct-technician-track img { object-position: center 52%; }
+
+.uv-page .uv-review-toggle {
+  display: block;
+  min-height: 36px;
+  margin: 12px auto 0;
+  padding: 4px 12px;
+  border: 1px solid #b8cbd9;
+  border-radius: 6px;
+  background: white;
+  color: var(--ap-navy);
+  font-size: 13px;
+  font-weight: 700;
+}
+.uv-page .uv-review-toggle[hidden] { display: none; }
+
+.uv-page .uv-city-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.uv-page .uv-city-card {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  align-items: center;
+  flex: 0 1 calc((100% - 30px) / 3);
+  gap: 8px 12px;
+  padding: 16px;
+  border: 1px solid #d7e9ee;
+  border-radius: 8px;
+  background: white;
+}
+.uv-page .uv-city-card p { margin: 0; color: var(--ap-navy); line-height: 1.4; }
+.uv-page .uv-city-card small { display: block; color: var(--ap-body); font-size: 11px; }
+.uv-page .uv-city-card > a {
+  grid-column: 2;
+  min-height: 30px;
+  width: fit-content;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  font-size: 12px;
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.uv-page .uv-city-card > a:hover { background: transparent; color: #007d80; }
+
+@media (max-width: 760px) {
+  .uv-page .uv-city-card { flex-basis: calc((100% - 15px) / 2); }
+}
+@media (max-width: 360px) {
+  .uv-page .uv-city-card { flex-basis: 100%; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .uv-page .service-trust-track,
+  .uv-page .service-trust-track .service-trust-list { width: 100%; }
+  .uv-page .service-trust-track .service-trust-list { flex-wrap: wrap; padding-inline: 16px; }
+}
+
+
+.uv-page .duct-sign-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.uv-page .uv-safety-note {
+  max-width: 740px;
+  margin: 24px auto 0;
+  text-align: center;
+  font-size: 13px;
+}
+.uv-page .service-trust-viewport:focus-within .service-trust-track { animation-play-state: paused; }
+@media (max-width: 760px) {
+  .uv-page .duct-sign-grid { grid-template-columns: 1fr; }
+}

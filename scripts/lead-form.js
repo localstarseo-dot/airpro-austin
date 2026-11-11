@@ -8,19 +8,21 @@ if (quote) {
   panels.forEach((p,i) => {p.hidden = i !== step;});
   quote.querySelectorAll('.hp-progress li').forEach((p,i) => {p.classList.toggle('active',i===step); if(i===step)p.setAttribute('aria-current','step');else p.removeAttribute('aria-current');});
   back.hidden = step === 0;
-  next.textContent = step === 2 ? 'PREVIEW APPOINTMENT REQUEST' : 'NEXT →';
+  next.textContent = step === 2 ? (quote.dataset.finalLabel || 'PREVIEW APPOINTMENT REQUEST') : 'NEXT →';
  }
  next.addEventListener('click', () => {
   for (const field of panels[step].querySelectorAll('input,select,textarea')) {if(!field.reportValidity())return;}
   if(step<2) {step++;render();panels[step].querySelector('input,select').focus();}
-  else quote.querySelector('.hp-form-status').textContent = 'Preview complete. Nothing was sent and no appointment was booked.';
+  else quote.querySelector('.hp-form-status').textContent = quote.dataset.demoResult || 'Preview complete. Nothing was sent and no appointment was booked.';
  });
  back.addEventListener('click',()=>{step=Math.max(0,step-1);render();});
  const service = quote.querySelector('select[name="service"]');
- document.querySelectorAll('[data-quote-service]').forEach(link => {
+ const city = quote.querySelector('input[name="city"]');
+ document.querySelectorAll('[data-quote-service], [data-quote-city]').forEach(link => {
   link.addEventListener('click', event => {
-   if (!service || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
-   service.value = link.dataset.quoteService;
+   if (event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+   if (service && link.dataset.quoteService) service.value = link.dataset.quoteService;
+   if (city && link.dataset.quoteCity) city.value = link.dataset.quoteCity;
   });
  });
  quote.addEventListener('submit',event=>event.preventDefault());

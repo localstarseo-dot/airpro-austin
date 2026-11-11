@@ -1,0 +1,104 @@
+.disinfection-page .duct-hero {
+  background: linear-gradient(90deg, #071f41df, #103973cd, #071f41b8),
+    url("../Assets/brand/photos/hvac-disinfection/01_laundry_room_coil_treatment.webp") center 46% / cover no-repeat,
+    var(--ap-navy);
+}
+
+
+.disinfection-page .service-trust-viewport:focus-within .service-trust-track { animation-play-state: paused; }
+.disinfection-page .service-trust-viewport:focus-visible { outline: 2px solid #00888b; outline-offset: -2px; }
+.disinfection-page .duct-scope-photo { object-position: center 48%; }
+
+.disinfection-page .disinfection-quote-grid {
+  grid-template-columns: minmax(0, 1fr);
+  max-width: 470px;
+}
+.disinfection-page .duct-price-card .disinfection-quote-title {
+  font-size: clamp(22px, 2.2vw, 26px);
+}
+.disinfection-page .disinfection-quote-grid .duct-checks {
+  width: fit-content;
+  margin: 0 auto 22px;
+  text-align: left;
+}
+.disinfection-page .disinfection-quote-grid .duct-checks li { padding-block: 5px; background-position: left 8px; }
+
+.disinfection-page .disinfection-service-gallery img {
+  aspect-ratio: 16 / 10;
+  object-position: center 55%;
+}
+.disinfection-page .duct-technician-track img { object-position: center 52%; }
+
+.disinfection-page .disinfection-review-toggle {
+  display: block;
+  min-height: 36px;
+  margin: 12px auto 0;
+  padding: 4px 12px;
+  border: 1px solid #b8cbd9;
+  border-radius: 6px;
+  background: white;
+  color: var(--ap-navy);
+  font-size: 13px;
+  font-weight: 700;
+}
+.disinfection-page .disinfection-review-toggle[hidden] { display: none; }
+
+.disinfection-page .disinfection-city-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.disinfection-page .disinfection-city-card {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  align-items: center;
+  flex: 0 1 calc((100% - 30px) / 3);
+  gap: 8px 12px;
+  padding: 16px;
+  border: 1px solid #d7e9ee;
+  border-radius: 8px;
+  background: white;
+}
+.disinfection-page .disinfection-city-card p { margin: 0; color: var(--ap-navy); line-height: 1.4; }
+.disinfection-page .disinfection-city-card small { display: block; color: var(--ap-body); font-size: 11px; }
+.disinfection-page .disinfection-city-card > a {
+  grid-column: 2;
+  min-height: 30px;
+  width: fit-content;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  font-size: 12px;
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.disinfection-page .disinfection-city-card > a:hover { background: transparent; color: #007d80; }
+
+@media (max-width: 760px) {
+  .disinfection-page .disinfection-city-card { flex-basis: calc((100% - 15px) / 2); }
+}
+@media (max-width: 360px) {
+  .disinfection-page .disinfection-city-card { flex-basis: 100%; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .disinfection-page .service-trust-track,
+  .disinfection-page .service-trust-track .service-trust-list { width: 100%; }
+  .disinfection-page .service-trust-track .service-trust-list { flex-wrap: wrap; padding-inline: 16px; }
+}
+
+
+.disinfection-page .duct-sign-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.disinfection-page .disinfection-safety-note {
+  max-width: 740px;
+  margin: 24px auto 0;
+  text-align: center;
+  font-size: 13px;
+}
+.disinfection-page .service-trust-viewport:focus-within .service-trust-track { animation-play-state: paused; }
+@media (max-width: 760px) {
+  .disinfection-page .duct-sign-grid { grid-template-columns: 1fr; }
+}
+
+.disinfection-page .disinfection-service-gallery--two { grid-template-columns: repeat(2, minmax(0, 1fr)); max-width: 900px; margin-inline: auto; }
+@media (max-width: 760px) { .disinfection-page .disinfection-service-gallery--two { grid-template-columns: 1fr; } }

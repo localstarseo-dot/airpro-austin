@@ -1,0 +1,117 @@
+.gutter-page .duct-hero {
+  background: linear-gradient(90deg, #071f41df, #103973cd, #071f41b8),
+    url("../Assets/brand/photos/gutter-services/01_gutter_rinsing.webp") center 46% / cover no-repeat,
+    var(--ap-navy);
+}
+
+
+.gutter-page .service-trust-viewport:focus-within .service-trust-track { animation-play-state: paused; }
+.gutter-page .service-trust-viewport:focus-visible { outline: 2px solid #00888b; outline-offset: -2px; }
+.gutter-page .duct-scope-photo { object-position: center 48%; }
+
+.gutter-page .gutter-quote-grid {
+  grid-template-columns: minmax(0, 1fr);
+  max-width: 470px;
+}
+.gutter-page .duct-price-card .gutter-quote-title {
+  font-size: clamp(22px, 2.2vw, 26px);
+}
+.gutter-page .gutter-quote-grid .duct-checks {
+  width: fit-content;
+  margin: 0 auto 22px;
+  text-align: left;
+}
+.gutter-page .gutter-quote-grid .duct-checks li { padding-block: 5px; background-position: left 8px; }
+
+.gutter-page .gutter-service-gallery img {
+  aspect-ratio: 16 / 10;
+  object-position: center 55%;
+}
+.gutter-page .duct-technician-track img { object-position: center 52%; }
+
+.gutter-page .gutter-review-toggle {
+  display: block;
+  min-height: 36px;
+  margin: 12px auto 0;
+  padding: 4px 12px;
+  border: 1px solid #b8cbd9;
+  border-radius: 6px;
+  background: white;
+  color: var(--ap-navy);
+  font-size: 13px;
+  font-weight: 700;
+}
+.gutter-page .gutter-review-toggle[hidden] { display: none; }
+
+.gutter-page .gutter-city-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.gutter-page .gutter-city-card {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  align-items: center;
+  flex: 0 1 calc((100% - 30px) / 3);
+  gap: 8px 12px;
+  padding: 16px;
+  border: 1px solid #d7e9ee;
+  border-radius: 8px;
+  background: white;
+}
+.gutter-page .gutter-city-card p { margin: 0; color: var(--ap-navy); line-height: 1.4; }
+.gutter-page .gutter-city-card small { display: block; color: var(--ap-body); font-size: 11px; }
+.gutter-page .gutter-city-card > a {
+  grid-column: 2;
+  min-height: 30px;
+  width: fit-content;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  font-size: 12px;
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.gutter-page .gutter-city-card > a:hover { background: transparent; color: #007d80; }
+
+@media (max-width: 760px) {
+  .gutter-page .gutter-city-card { flex-basis: calc((100% - 15px) / 2); }
+}
+@media (max-width: 360px) {
+  .gutter-page .gutter-city-card { flex-basis: 100%; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .gutter-page .service-trust-track,
+  .gutter-page .service-trust-track .service-trust-list { width: 100%; }
+  .gutter-page .service-trust-track .service-trust-list { flex-wrap: wrap; padding-inline: 16px; }
+}
+
+
+.gutter-page .duct-sign-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.gutter-page .gutter-safety-note {
+  max-width: 740px;
+  margin: 24px auto 0;
+  text-align: center;
+  font-size: 13px;
+}
+.gutter-page .service-trust-viewport:focus-within .service-trust-track { animation-play-state: paused; }
+@media (max-width: 760px) {
+  .gutter-page .duct-sign-grid { grid-template-columns: 1fr; }
+}
+
+.gutter-page .gutter-service-gallery--two { grid-template-columns: repeat(2, minmax(0, 1fr)); max-width: 900px; margin-inline: auto; }
+@media (max-width: 760px) { .gutter-page .gutter-service-gallery--two { grid-template-columns: 1fr; } }
+
+.gutter-page .duct-sign-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+.gutter-page .gutter-quote-grid { max-width: none; grid-template-columns: repeat(3, minmax(0, 1fr)); align-items: stretch; }
+.gutter-page .duct-price-card { display: flex; flex-direction: column; }
+.gutter-page .duct-price-card > a { margin-top: auto; }
+.gutter-page .duct-price-card:first-child { border-color: #00b4b6; border-top-width: 4px; }
+.gutter-page .gutter-availability { display: table; margin: 24px auto 0; }
+.gutter-page .duct-split h3 { font-size: 18px; margin: 22px 0 8px; }
+@media(max-width:1000px) { .gutter-page .duct-sign-grid { grid-template-columns: repeat(2,minmax(0,1fr)); } }
+@media(max-width:760px) { .gutter-page .duct-sign-grid, .gutter-page .gutter-quote-grid { grid-template-columns: 1fr; } }
+
+.gutter-page .duct-price-card .duct-price-label { background: #0b2d5b; color: white; }
+.gutter-page .duct-price-card:first-child .duct-price-label { background: #00b4b6; color: #0b2d5b; }

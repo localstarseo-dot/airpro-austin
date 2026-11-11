@@ -3,6 +3,9 @@
     const response = await fetch(`components/${slot.dataset.component}.html`, { cache: 'no-store' });
     if (!response.ok) throw new Error(`Unable to load ${slot.dataset.component}`);
     slot.innerHTML = await response.text();
+    if (slot.hasAttribute('data-local-offer')) {
+      slot.querySelector('[data-fall-offer]')?.setAttribute('href', '#book');
+    }
   }));
   const toggles = [...document.querySelectorAll('.ap-dropdown-toggle')];
   const closeDropdowns = except => toggles.forEach(button => {

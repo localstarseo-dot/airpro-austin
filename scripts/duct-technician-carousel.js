@@ -4,6 +4,7 @@ if (carousel) {
   const track = carousel.querySelector('.duct-technician-track');
   const photos = [...track.querySelectorAll('img')];
   const dots = carousel.querySelector('.duct-technician-dots');
+  const playOnce = carousel.hasAttribute('data-autoplay-once');
   const reducedMotion = matchMedia('(prefers-reduced-motion: reduce)');
   let inView = false;
   let hovering = false;
@@ -48,8 +49,9 @@ if (carousel) {
 
     timer = setInterval(() => {
       const index = currentIndex();
-      if (index === lastIndex()) showSlide(0, true);
-      else showSlide(index + 1);
+      if (index < lastIndex()) showSlide(index + 1);
+      else if (playOnce) clearInterval(timer);
+      else showSlide(0, true);
     }, 3000);
   }
 

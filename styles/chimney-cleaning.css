@@ -1,0 +1,89 @@
+.chimney-page .duct-hero {
+  background: linear-gradient(90deg, #071f41df, #103973cd, #071f41b8),
+    url("../Assets/AirPro_Austin_Chimney_Cleaning_Complete_Asset_Pack/Technician_Photos/technician_01_firebox_vacuum.webp") center 49% / cover no-repeat,
+    var(--ap-navy);
+}
+
+
+.chimney-page .service-trust-viewport:focus-within .service-trust-track { animation-play-state: paused; }
+.chimney-page .service-trust-viewport:focus-visible { outline: 2px solid #00888b; outline-offset: -2px; }
+.chimney-page .chimney-scope-photo { margin: 0; }
+.chimney-page .chimney-scope-photo img { object-position: center 53%; }
+
+.chimney-page .chimney-quote-grid {
+  grid-template-columns: minmax(0, 1fr);
+  max-width: 470px;
+}
+.chimney-page .duct-price-card .chimney-quote-title {
+  font-size: clamp(22px, 2.2vw, 26px);
+}
+.chimney-page .chimney-quote-grid .duct-checks {
+  width: fit-content;
+  margin: 0 auto 22px;
+  text-align: left;
+}
+.chimney-page .chimney-quote-grid .duct-checks li { padding-block: 5px; background-position: left 8px; }
+
+.chimney-page .chimney-service-gallery img {
+  aspect-ratio: 16 / 10;
+  object-position: center 55%;
+}
+.chimney-page .duct-technician-track img { object-position: center 52%; }
+
+.chimney-page .chimney-review-toggle {
+  display: block;
+  min-height: 36px;
+  margin: 12px auto 0;
+  padding: 4px 12px;
+  border: 1px solid #b8cbd9;
+  border-radius: 6px;
+  background: white;
+  color: var(--ap-navy);
+  font-size: 13px;
+  font-weight: 700;
+}
+.chimney-page .chimney-review-toggle[hidden] { display: none; }
+
+.chimney-page .chimney-city-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.chimney-page .chimney-city-card {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  align-items: center;
+  flex: 0 1 calc((100% - 30px) / 3);
+  gap: 8px 12px;
+  padding: 16px;
+  border: 1px solid #d7e9ee;
+  border-radius: 8px;
+  background: white;
+}
+.chimney-page .chimney-city-card p { margin: 0; color: var(--ap-navy); line-height: 1.4; }
+.chimney-page .chimney-city-card small { display: block; color: var(--ap-body); font-size: 11px; }
+.chimney-page .chimney-city-card > a {
+  grid-column: 2;
+  min-height: 30px;
+  width: fit-content;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  font-size: 12px;
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.chimney-page .chimney-city-card > a:hover { background: transparent; color: #007d80; }
+
+@media (max-width: 760px) {
+  .chimney-page .chimney-city-card { flex-basis: calc((100% - 15px) / 2); }
+}
+@media (max-width: 360px) {
+  .chimney-page .chimney-city-card { flex-basis: 100%; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .chimney-page .service-trust-track,
+  .chimney-page .service-trust-track .service-trust-list { width: 100%; }
+  .chimney-page .service-trust-track .service-trust-list { flex-wrap: wrap; padding-inline: 16px; }
+}
