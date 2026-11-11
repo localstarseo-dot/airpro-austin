@@ -82,7 +82,6 @@
 .hp-form-controls{display:flex;gap:10px}
 .hp-quote-body .hp-btn{border:0;border-radius:7px;background:var(--ap-navy);color:white;font:700 12px/1.5 Inter,Arial,sans-serif;min-height:45px;padding:11px 14px;cursor:pointer;flex:1}
 .hp-back{background:white;border:1px solid #d3e0e8;border-radius:6px;font-size:11px;color:var(--ap-navy);padding:10px;cursor:pointer}
-.brand-home .hp-local-note{font-size:9px;line-height:1.5;margin:12px 0 0;color:#667d90}
 .brand-home .hp-form-status{font-size:11px;line-height:1.6;margin:10px 0 0}
 .hp-quote-body [hidden]{display:none!important}
 @media(max-width:1100px){.home-hero .hero-grid{gap:35px;grid-template-columns:1.1fr .9fr}.hp-quote-body{padding:22px}.hp-quote-head{padding:22px}.brand-home .hero-quote-title{font-size:19px}}

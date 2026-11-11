@@ -56,11 +56,9 @@
   font: inherit;
 }
 .fall-offer-form button,
-.fall-offer-note,
 .fall-offer-status {
   grid-column: 1 / -1;
 }
-.fall-offer-note,
 .fall-offer-status {
   margin: 0;
   font-size: 12px;
