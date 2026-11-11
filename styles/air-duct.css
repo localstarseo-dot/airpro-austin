@@ -1,0 +1,469 @@
+.duct-hero {
+  padding: clamp(16px, 2.7vw, 42px) 0;
+  background: linear-gradient(90deg, #071f41df, #103973cd, #071f41a6),
+    url("../Assets/brand/photos/airpro_technician_03_front_angle.webp") center 37% / cover no-repeat,
+    var(--ap-navy);
+  text-align: center;
+}
+
+.duct-split {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: center;
+  gap: clamp(24px, 5vw, 70px);
+}
+
+.air-duct-page .duct-hero .eyebrow {
+  display: block;
+  color: #e4faff;
+  font-family: Inter, Arial, sans-serif;
+}
+
+.air-duct-page .duct-headline {
+  margin: 0 0 16px;
+  color: white;
+  font: 800 clamp(32px, 4.5vw, 58px)/1.08 Montserrat, Arial, sans-serif;
+  letter-spacing: -.045em;
+}
+
+.air-duct-page .duct-intro {
+  max-width: 60ch;
+  margin-inline: auto;
+  color: #f0f7fb;
+  font-size: clamp(15px, 1.4vw, 17px);
+}
+
+.duct-hero .brand-actions {
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 19px;
+}
+
+.duct-hero .brand-button--primary {
+  background: white;
+  border-color: white;
+  color: var(--ap-navy);
+}
+
+.duct-hero .brand-button--outline {
+  background: #006b72;
+  border-color: #58d7d9;
+  color: white;
+}
+
+.duct-hero .brand-button--primary:hover { background: var(--ap-blue-light); }
+.duct-hero .brand-button--outline:hover { background: #00565c; }
+.duct-hero .brand-button:focus-visible { outline-color: white; }
+
+.duct-photo,
+.duct-gallery img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.duct-photo {
+  border-radius: 18px;
+  box-shadow: 0 14px 36px #0b2d5b15;
+}
+
+.duct-scope-photo { aspect-ratio: 16 / 10; }
+
+.duct-badges {
+  display: flex;
+  width: fit-content;
+  max-width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: clamp(12px, 2vw, 25px);
+  align-items: center;
+  margin: 18px auto 0;
+}
+
+.duct-badges img { width: auto; height: 46px; object-fit: contain; }
+.duct-badges img:last-child { height: 63px; }
+
+.duct-section { padding: clamp(50px, 6vw, 88px) 0; }
+
+.duct-heading {
+  max-width: 850px;
+  margin: 0 auto clamp(24px, 4vw, 42px);
+  text-align: center;
+}
+
+.air-duct-page .eyebrow { text-transform: uppercase; }
+.duct-heading p:last-child { margin-bottom: 0; }
+
+.duct-sign-grid,
+.duct-process,
+.duct-gallery {
+  display: grid;
+  gap: clamp(14px, 2vw, 24px);
+}
+
+.duct-sign-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+.duct-process,
+.duct-gallery { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+
+.duct-card {
+  margin: 0;
+  padding: clamp(18px, 2.3vw, 28px);
+  border: 1px solid #d9e6ee;
+  border-radius: 14px;
+  background: white;
+}
+
+.duct-card .brand-icon { width: 44px; height: 44px; margin-bottom: 14px; }
+.air-duct-page .duct-card h3 { margin: 0 0 10px; font-size: 18px; }
+.duct-card p:last-child { margin-bottom: 0; }
+
+.duct-checks,
+.duct-process {
+  list-style: none;
+  padding: 0;
+}
+
+.duct-checks { margin: 0; }
+.duct-checks li {
+  padding: 10px 0 10px 33px;
+  background: url("../Assets/brand/icons/30_checkmark.svg") no-repeat left 13px / 20px;
+  color: var(--ap-body);
+}
+
+.duct-inclusions { background: var(--ap-blue-light); }
+
+.duct-process { margin: 30px 0 0; }
+.duct-process li { display: flex; gap: 14px; }
+.duct-step {
+  display: grid;
+  place-items: center;
+  flex: 0 0 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #e6f6ff;
+  color: var(--ap-navy);
+  font-weight: 800;
+}
+
+.duct-price-heading { max-width: 1000px; }
+.duct-price-heading h2 { text-transform: uppercase; }
+.duct-price-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: clamp(14px, 2vw, 24px);
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.duct-price-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  box-shadow: 0 10px 26px #0b2d5b0c;
+}
+.duct-price-card--featured { border-color: var(--ap-teal); }
+.air-duct-page .duct-price-label {
+  margin: 0 0 12px;
+  padding: 6px 14px;
+  border-radius: 999px;
+  background: var(--ap-navy);
+  color: white;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: .08em;
+  line-height: 1.35;
+  text-transform: uppercase;
+}
+.air-duct-page .duct-price-card:not(:first-child) .duct-price-label {
+  background: var(--ap-teal);
+  color: var(--ap-navy);
+}
+.air-duct-page .duct-price-card h3 { text-transform: uppercase; }
+.air-duct-page .duct-price { margin: 12px 0 18px; color: var(--ap-navy); }
+.duct-price strong { font: 800 clamp(38px, 5vw, 60px)/1 Montserrat, Arial, sans-serif; }
+.duct-price span { margin-left: 5px; color: var(--ap-body); }
+.duct-price-description { flex: 1; }
+.duct-price-card .brand-button {
+  width: 100%;
+  text-transform: uppercase;
+  white-space: normal;
+}
+.duct-price-card--featured .brand-button {
+  border-color: var(--ap-teal);
+  background: var(--ap-teal);
+  color: var(--ap-navy);
+}
+.duct-price-card--featured .brand-button:hover {
+  border-color: #72dadd;
+  background: #72dadd;
+}
+.air-duct-page .duct-price-terms {
+  margin: 16px 0 0;
+  font-size: 12px;
+  line-height: 1.55;
+}
+
+.duct-gallery figure {
+  margin: 0;
+  overflow: hidden;
+  border-radius: 14px;
+  background: var(--ap-navy);
+  color: white;
+}
+
+.duct-comparison {
+  --comparison-position: 50%;
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 16 / 10;
+  background: #153d67;
+}
+.duct-comparison img {
+  height: 100%;
+  object-position: center 45%;
+}
+.duct-gallery figure:first-child .duct-comparison img { object-position: center 75%; }
+.duct-gallery figure:nth-child(2) .duct-comparison img { object-position: center 28%; }
+.duct-comparison-before {
+  position: absolute;
+  inset: 0;
+  clip-path: inset(0 calc(100% - var(--comparison-position)) 0 0);
+}
+.duct-comparison-label {
+  position: absolute;
+  top: 12px;
+  padding: 3px 9px;
+  border-radius: 5px;
+  font-size: 12px;
+  font-weight: 700;
+  pointer-events: none;
+}
+.duct-comparison-label--before {
+  left: 12px;
+  background: var(--ap-navy);
+  color: white;
+}
+.duct-comparison-label--after {
+  right: 12px;
+  background: var(--ap-blue-light);
+  color: var(--ap-navy);
+}
+.duct-comparison-divider {
+  position: absolute;
+  inset-block: 0;
+  left: var(--comparison-position);
+  width: 2px;
+  transform: translateX(-50%);
+  background: white;
+}
+.duct-comparison-divider span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: grid;
+  place-items: center;
+  width: 38px;
+  height: 38px;
+  transform: translate(-50%, -50%);
+  border: 2px solid var(--ap-navy);
+  border-radius: 50%;
+  background: white;
+  color: var(--ap-navy);
+  font: 700 18px/1 Inter, sans-serif;
+}
+.duct-comparison-range {
+  position: absolute;
+  top: calc(50% - 22px);
+  left: -22px;
+  width: calc(100% + 44px);
+  height: 44px;
+  margin: 0;
+  appearance: none;
+  opacity: 0;
+  cursor: ew-resize;
+  touch-action: pan-y;
+}
+.duct-comparison-range::-webkit-slider-thumb {
+  appearance: none;
+  width: 44px;
+  height: 44px;
+}
+.duct-comparison-range::-moz-range-thumb {
+  width: 44px;
+  height: 44px;
+  border: 0;
+}
+.duct-gallery figure:focus-within { outline: 3px solid white; outline-offset: 4px; }
+.duct-gallery figcaption {
+  display: grid;
+  place-items: center;
+  min-height: 64px;
+  padding: 12px 16px;
+  background: white;
+  color: var(--ap-navy);
+  font: 700 clamp(15px, 1.3vw, 18px)/1.35 Montserrat, Arial, sans-serif;
+  text-align: center;
+  text-wrap: balance;
+}
+.duct-work-section { background: var(--ap-navy); }
+.air-duct-page .duct-work-section h2 {
+  color: white;
+  font-size: clamp(26px, 3.2vw, 42px);
+  text-wrap: balance;
+}
+.air-duct-page .duct-work-section .duct-heading p { color: #deedf7; }
+.air-duct-page .duct-work-section .eyebrow { color: #a8e9eb; }
+.duct-work-section .duct-gallery figure { background: #153d67; }
+.duct-technician-carousel {
+  max-width: 1040px;
+  margin: clamp(28px, 4vw, 48px) auto 0;
+}
+.duct-technician-track {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 50%;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  border-radius: 14px;
+  scrollbar-width: none;
+}
+.duct-technician-track::-webkit-scrollbar { display: none; }
+.duct-technician-track:focus-visible,
+.duct-technician-dot:focus-visible { outline: 3px solid white; outline-offset: 4px; }
+.duct-technician-track img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+  scroll-snap-align: start;
+}
+.duct-technician-dots:not([hidden]) {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 14px;
+}
+.duct-technician-dot {
+  display: grid;
+  place-items: center;
+  width: 26px;
+  height: 32px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+}
+.duct-technician-dot::before {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #748ba1;
+  content: "";
+}
+.duct-technician-dot[aria-current="true"]::before { background: white; }
+.duct-technician-dot[hidden] { display: none; }
+@media (max-width: 600px) {
+  .duct-technician-track { grid-auto-columns: 100%; }
+}
+
+.duct-deep-cleaning {
+  max-width: 700px;
+  margin: clamp(28px, 4vw, 48px) auto 0;
+  text-align: center;
+}
+.air-duct-page .duct-deep-cleaning h3 {
+  color: white;
+  font-size: clamp(21px, 2.4vw, 30px);
+}
+.air-duct-page .duct-deep-cleaning p { color: #deedf7; }
+.air-duct-page .duct-deep-cleaning p:last-child { margin-bottom: 0; }
+
+.air-duct-page .duct-gbp-section {
+  margin: 0;
+  padding-block: clamp(40px, 5vw, 72px);
+  background: white;
+}
+.air-duct-page .duct-gbp-section h2 {
+  margin-bottom: 18px;
+  font-size: clamp(24px, 3vw, 34px);
+  text-transform: uppercase;
+}
+
+.air-duct-page .area-section { background: var(--ap-blue-light); }
+.air-duct-page .area-section .area-copy h2 { color: var(--ap-navy); }
+.air-duct-page .area-section .area-copy .eyebrow { color: #007d80; }
+.air-duct-page .area-section .area-copy p:not(.eyebrow) { color: var(--ap-body); }
+.air-duct-page .area-section .area-icon { background: white; }
+
+.duct-faq { max-width: 900px; margin: 0 auto; border-top: 1px solid #d9e6ee; }
+.duct-faq details { border-bottom: 1px solid #d9e6ee; }
+.duct-faq summary {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  align-items: center;
+  padding: 18px 0;
+  list-style: none;
+  cursor: pointer;
+}
+.duct-faq summary::-webkit-details-marker { display: none; }
+.duct-faq summary::after {
+  content: "";
+  width: 9px;
+  height: 9px;
+  flex: 0 0 9px;
+  border-right: 2px solid #007d80;
+  border-bottom: 2px solid #007d80;
+  transform: rotate(45deg);
+}
+.duct-faq details[open] summary::after { transform: rotate(225deg); }
+.air-duct-page .duct-faq h3 { margin: 0; font-size: 16px; }
+
+.duct-faq-section { padding-bottom: 0; }
+
+.duct-booking {
+  margin-top: clamp(34px, 5vw, 65px);
+  padding-block: clamp(40px, 6vw, 80px);
+  background: var(--ap-navy);
+}
+.duct-booking-layout {
+  display: grid;
+  justify-items: center;
+  gap: clamp(24px, 3vw, 36px);
+}
+.duct-booking-copy { text-align: center; }
+.duct-booking-copy .brand-actions { justify-content: center; }
+.air-duct-page .duct-booking-copy h3 {
+  color: white;
+  font-size: clamp(25px, 3vw, 36px);
+}
+.air-duct-page .duct-booking-copy p { color: #deedf7; }
+.air-duct-page .duct-booking-copy .eyebrow { color: #a8e9eb; }
+.duct-booking-copy .brand-button--outline { border-color: white; color: white; }
+.duct-booking-copy .brand-button--outline:hover { background: white; color: var(--ap-navy); }
+.duct-booking-copy .brand-button:focus-visible { outline-color: white; }
+.air-duct-page .duct-booking .hp-quote { max-width: 620px; width: 100%; margin: 0; scroll-margin-top: 108px; }
+
+@media (max-width: 960px) {
+  .duct-sign-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+@media (max-width: 760px) {
+  .duct-split,
+  .duct-price-grid,
+  .duct-process,
+  .duct-gallery { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 600px) {
+  .duct-hero { padding-block: 48px; }
+}
+
+@media (max-width: 420px) {
+  .duct-badges { gap: 10px; }
+  .duct-badges img { height: 31px; }
+  .duct-badges img:last-child { height: 44px; }
+  .duct-sign-grid { grid-template-columns: 1fr; }
+  .duct-booking .brand-button { width: 100%; }
+}

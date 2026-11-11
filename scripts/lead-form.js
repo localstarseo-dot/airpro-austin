@@ -16,6 +16,13 @@ if (quote) {
   else quote.querySelector('.hp-form-status').textContent = 'Preview complete. Nothing was sent and no appointment was booked.';
  });
  back.addEventListener('click',()=>{step=Math.max(0,step-1);render();});
+ const service = quote.querySelector('select[name="service"]');
+ document.querySelectorAll('[data-quote-service]').forEach(link => {
+  link.addEventListener('click', event => {
+   if (!service || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+   service.value = link.dataset.quoteService;
+  });
+ });
  quote.addEventListener('submit',event=>event.preventDefault());
  render();
 }
