@@ -137,6 +137,8 @@
   .service-trust-list li { font-size: 14px; }
 }
 
+.service-section { background: var(--ap-blue-light); }
+
 .service-section .section-heading {
   text-align: center;
 }
@@ -471,4 +473,36 @@
     font-size: clamp(23px, 3.1vw, 31px);
     white-space: nowrap;
   }
+}
+/* Homepage section rhythm: join review backgrounds and keep photo cards clear. */
+.brand-home > #customer-reviews {
+  margin-top: 0;
+}
+.brand-home #how-it-works {
+  padding-block: clamp(40px, 4vw, 60px);
+}
+.brand-home #how-it-works .section-heading {
+  margin-bottom: 30px;
+}
+.brand-home #how-it-works .process-top {
+  padding-bottom: 18px;
+  margin-bottom: 18px;
+}
+.brand-home #how-it-works .process-reassurance {
+  margin-top: 28px;
+}
+.brand-home #service-gallery > .home-container {
+  padding-bottom: clamp(32px, 4vw, 56px);
+}
+@media (max-width: 600px) {
+  .brand-home #how-it-works .section-heading { margin-bottom: 24px; }
+  .brand-home #how-it-works .process-reassurance { margin-top: 24px; }
+}
+
+/* Emphasize homepage FAQ references with the primary brand color. */
+.brand-home #faqs .faq-answer a {
+  color: var(--ap-navy);
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 3px;
 }

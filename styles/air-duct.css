@@ -82,7 +82,7 @@
 }
 
 .duct-badges img { width: auto; height: 46px; object-fit: contain; }
-.duct-badges img:last-child { height: 63px; }
+.duct-badges img[src*="thumbtack"] { height: 63px; }
 
 .duct-section { padding: clamp(50px, 6vw, 88px) 0; }
 
@@ -463,7 +463,31 @@
 @media (max-width: 420px) {
   .duct-badges { gap: 10px; }
   .duct-badges img { height: 31px; }
-  .duct-badges img:last-child { height: 44px; }
+  .duct-badges img[src*="thumbtack"] { height: 44px; }
   .duct-sign-grid { grid-template-columns: 1fr; }
   .duct-booking .brand-button { width: 100%; }
+}
+/* Shared service-page spacing, matching the homepage cleanup. */
+.air-duct-page.service-detail-page .duct-gbp-section {
+  margin-block: 0;
+}
+.air-duct-page.service-detail-page .duct-inclusions {
+  padding-block: clamp(40px, 4vw, 60px);
+}
+.air-duct-page.service-detail-page .duct-process {
+  margin-top: 28px;
+}
+.air-duct-page.service-detail-page .duct-work-section {
+  padding-bottom: clamp(40px, 4vw, 64px);
+}
+.air-duct-page.service-detail-page #cleaning-services {
+  padding-block: clamp(40px, 4vw, 64px);
+}
+
+/* Service FAQ links follow the approved homepage treatment. */
+.service-detail-page .duct-faq a {
+  color: var(--ap-navy);
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 3px;
 }

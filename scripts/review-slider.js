@@ -29,7 +29,7 @@
 
   function schedule() {
     clearInterval(timer);
-    if (inView && !document.hidden && !hovered && !paused && !track.matches(':focus-within') && !motion.matches) {
+    if (inView && !document.hidden && !hovered && !paused && !track.matches(':focus-within') && !navigation?.matches(':focus-within') && !motion.matches) {
       timer = setInterval(() => move(-1, true), 3000);
     }
   }
@@ -46,6 +46,25 @@
     pauseButton.hidden = motion.matches;
     pauseButton.addEventListener('click', () => setPaused(!paused));
     track.addEventListener('pointerdown', () => setPaused(true));
+  }
+
+  const navigation = track.parentElement.querySelector('[data-review-navigation]');
+  if (navigation) {
+    navigation.hidden = false;
+    navigation.querySelectorAll('[data-review-direction]').forEach(button => {
+      button.addEventListener('click', () => {
+        const direction = Number(button.dataset.reviewDirection);
+        const end = track.scrollWidth - track.clientWidth;
+        const atEdge = direction > 0 ? track.scrollLeft >= end - 3 : track.scrollLeft <= 3;
+        if (atEdge) {
+          track.scrollTo({ left: direction > 0 ? 0 : end, behavior: motion.matches ? 'instant' : 'smooth' });
+        } else {
+          move(direction);
+        }
+      });
+    });
+    navigation.addEventListener('focusin', () => clearInterval(timer));
+    navigation.addEventListener('focusout', () => queueMicrotask(schedule));
   }
 
   track.addEventListener('pointerenter', event => {
@@ -65,7 +84,7 @@
     if (pauseButton) pauseButton.hidden = motion.matches;
     schedule();
   });
-  if (!motion.matches) track.scrollTo({ left: track.scrollWidth, behavior: 'instant' });
+  if (!navigation && !motion.matches) track.scrollTo({ left: track.scrollWidth, behavior: 'instant' });
   new IntersectionObserver(([entry]) => {
     inView = entry.isIntersecting;
     schedule();

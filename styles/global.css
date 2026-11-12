@@ -92,3 +92,24 @@
   .ap-nav-actions { justify-content: flex-start; flex-wrap: wrap; }
   .ap-nav-actions .brand-button--primary { display: none; }
 }
+
+/* Platform profile links retain the existing badge and review-card layout. */
+.review-profile-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.review-profile-link:focus-visible {
+  outline: 2px solid var(--ap-teal);
+  outline-offset: 4px;
+  border-radius: 4px;
+}
+.duct-heading > .review-profile-link {
+  display: flex;
+  width: fit-content;
+  margin-inline: auto;
+}
+.location-yelp-card figcaption > .review-profile-link {
+  margin-left: auto;
+}

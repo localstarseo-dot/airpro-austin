@@ -1,0 +1,239 @@
+/* Location layout adjustments on top of the shared service-page styling. */
+.location-wrap { width: min(1150px, 100% - 40px); margin-inline: auto; }
+.location-page [id] { scroll-margin-top: 110px; }
+.location-section, .location-book { padding: clamp(50px, 6vw, 88px) 0; }
+.location-light { background: var(--ap-blue-light); }
+.location-hero {
+  background-image: linear-gradient(90deg, #071f41bc, #071f41bd, #071f41a8),
+    var(--location-hero-photo, url("../Assets/brand/photos/bee-cave-sculpture-park.jpg"));
+  background-position: center 66%;
+}
+.location-hero--buda {
+  --location-hero-photo: url("../Assets/brand/photos/buda-water-tower.jpg");
+  background-position: center 42%;
+}
+.location-page .location-hero .eyebrow { font-size: clamp(11px, 1.3vw, 15px); }
+@media (min-width: 1024px) {
+  .location-page .location-hero .duct-headline {
+    font-size: clamp(34px, 3.8vw, 52px);
+    white-space: nowrap;
+  }
+}
+.location-grid { display: grid; gap: 20px; }
+.location-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.location-grid .duct-card > img { margin-bottom: 12px; }
+.location-price { max-width: 470px; width: 100%; margin-inline: auto; }
+.location-process .duct-card { position: relative; flex-direction: column; align-items: center; gap: 0; text-align: center; }
+.location-process .duct-step { position: absolute; top: 16px; left: 16px; width: 32px; }
+.location-price .brand-button { margin-top: 8px; }
+.location-page .duct-gbp-section h3 { margin-bottom: 18px; font-size: clamp(24px, 3vw, 34px); text-transform: uppercase; }
+.location-faq { max-width: 840px; border-top: 0; }
+.location-faq > h2 { text-align: center; margin-bottom: 30px; }
+.location-faq + .location-book { margin-top: clamp(44px, 6vw, 84px); }
+.location-section:has(> .location-book) { padding-bottom: 0; }
+.location-page .duct-booking-copy h2 { color: white; }
+@media (max-width: 767px) {
+  .location-grid { grid-template-columns: 1fr; }
+}
+
+.location-page .location-current-city {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  padding: 17px 12px;
+  border: 1px solid #d7e9ee;
+  border-radius: 8px;
+  background: white;
+  color: var(--ap-navy);
+  font-size: 11px;
+  font-weight: 700;
+}
+.location-current-city small { display: block; color: var(--ap-body); }
+@media (min-width: 601px) {
+  .location-page .location-current-city { grid-column: span 2; padding: 21px 18px; }
+  .location-page .city-grid > .location-current-city:nth-last-child(2):nth-child(3n + 1) { grid-column: 2 / span 2; }
+}
+
+.location-checklist .service-trust-list { margin-block: 0; }
+.location-checklist .service-trust-viewport:focus-visible { overflow-x: auto; outline: 2px solid #007d80; outline-offset: -3px; }
+.location-checklist .service-trust-viewport:focus-visible .service-trust-track { animation: none; }
+.location-checklist .service-trust-viewport:focus-visible .service-trust-copy { display: none; }
+@media (pointer: coarse), (prefers-reduced-motion: reduce) {
+  .location-checklist .service-trust-viewport { overflow-x: auto; scroll-snap-type: x proximity; }
+  .location-checklist .service-trust-track { animation: none; }
+  .location-checklist .service-trust-copy { display: none; }
+  .location-checklist li { scroll-snap-align: start; }
+}
+
+.location-work-notes {
+  max-width: 700px;
+  margin: clamp(28px, 4vw, 48px) auto 0;
+  text-align: center;
+}
+.location-page .location-work-notes h3 { color: white; font-size: clamp(20px, 2.5vw, 28px); }
+.location-page .location-work-notes p { color: #deedf7; }
+.location-work-notes p:last-child { margin-bottom: 0; }
+
+.location-page .service-section .section-heading h3 {
+  margin-inline: auto;
+  font-size: clamp(26px, 4vw, 36px);
+  line-height: 1.2;
+}
+
+.location-page .duct-gbp-section.location-reviews--yellow { background: #fff7df; }
+.location-reviews--yellow .gbp-summary { margin-bottom: 24px; }
+.location-reviews--yellow .buda-review-rating {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding: 7px 14px;
+  border: 1px solid #ecdfbc;
+  border-radius: 999px;
+  background: white;
+}
+.location-reviews--yellow .buda-review-rating .review-stars { margin: 0; }
+.location-reviews--yellow .buda-review-rating .review-stars img { width: 18px; height: 18px; }
+.location-reviews--yellow .review-slider {
+  width: min(1200px, 100% - 32px);
+  margin-inline: auto;
+  padding: 4px;
+  scroll-padding-inline: 4px;
+}
+.location-reviews--yellow .review-card {
+  background: white;
+  border: 1px solid #ecdfbc;
+  border-radius: 14px;
+  box-shadow: 0 3px 10px #7150190d;
+}
+.location-reviews--yellow .review-card blockquote { font-size: 15px; line-height: 1.65; }
+.buda-review-controls:not([hidden]) { display: flex; justify-content: center; gap: 10px; margin-top: 20px; }
+.buda-review-controls button {
+  width: 44px;
+  height: 44px;
+  border: 1px solid #d6c59c;
+  border-radius: 50%;
+  background: white;
+  color: var(--ap-navy);
+  font-size: 20px;
+}
+.buda-review-controls button:hover { background: var(--ap-navy); color: white; }
+
+/* Compact yellow review treatment for Bee Cave. */
+.location-page .duct-gbp-section.location-reviews--compact {
+  background: #fff0bf;
+  padding-block: clamp(24px, 2.5vw, 38px);
+}
+.location-reviews--compact .gbp-summary { margin-bottom: 16px; }
+.location-reviews--compact .gbp-summary .eyebrow { margin-bottom: 8px; }
+.location-reviews--compact .gbp-summary h3 { margin-bottom: 10px; }
+.location-reviews--compact .gbp-summary .review-stars { margin-bottom: 6px; }
+.location-reviews--compact .gbp-summary .review-stars img { width: 22px; height: 22px; }
+.location-reviews--compact .gbp-google-logo { height: 28px; width: auto; }
+.location-reviews--compact .review-card {
+  background: white;
+  border: 1px solid #ead8a3;
+  padding: 16px;
+}
+
+
+
+.location-yelp { background: #b83b43; padding: clamp(30px, 4vw, 52px) 0; }
+.location-page .location-yelp :is(h3, .eyebrow, .duct-heading p) { color: white; }
+.location-page .location-yelp h3 { font-size: clamp(24px, 3vw, 34px); }
+.location-yelp-logo { display: block; width: 180px; max-width: 100%; height: auto; margin: 16px auto; }
+.location-yelp-track {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: calc((100% - 32px) / 3);
+  gap: 16px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding: 4px;
+}
+.location-yelp-card { margin: 0; padding: 16px; background: white; border: 1px solid #ead8a3; border-radius: 14px; scroll-snap-align: start; min-width: 0; min-height: 190px; }
+.location-yelp-card figcaption { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+.location-yelp-card figcaption img { width: 53px; height: auto; object-fit: contain; flex-shrink: 0; }
+.location-yelp-card figcaption strong { display: block; color: var(--ap-navy); }
+.location-yelp-card figcaption span { font-size: 12px; color: var(--ap-body); }
+.location-page .location-yelp-stars { color: #b5222b; margin: 12px 0; letter-spacing: 2px; }
+.location-yelp-card blockquote { margin: 0; font-size: 14px; line-height: 1.65; color: var(--ap-ink); }
+@media (max-width: 960px) { .location-yelp-track { grid-auto-columns: calc((100% - 16px) / 2); } }
+@media (max-width: 600px) { .location-yelp-track { grid-auto-columns: 100%; } }
+.location-mock-track {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: calc((100% - 32px) / 3);
+  gap: 16px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding: 4px;
+}
+@media (max-width: 960px) { .location-mock-track { grid-auto-columns: calc((100% - 16px) / 2); } }
+@media (max-width: 600px) { .location-mock-track { grid-auto-columns: 100%; } }
+
+/* Match the Google carousel dimensions across real and sample cards. */
+.location-yelp > .location-wrap { width: 100%; }
+.location-yelp .location-yelp-track {
+  grid-auto-columns: calc((100% - 48px) / 4);
+  gap: 16px;
+  padding: 4px 20px;
+  scroll-padding-inline: 20px;
+  scrollbar-width: none;
+}
+.location-yelp-track::-webkit-scrollbar { display: none; }
+.location-yelp .location-yelp-card {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  min-height: 190px;
+}
+.location-yelp-card figcaption { justify-content: initial; gap: 9px; min-height: 40px; }
+.location-yelp-card figcaption > div { flex: 1; min-width: 0; }
+.location-yelp-card figcaption strong { font-size: 13px; }
+.location-yelp-card figcaption div > span { font-size: 10px; display: block; }
+.location-yelp-card figcaption img { margin-left: auto; }
+.location-yelp-card .review-avatar { flex-shrink: 0; }
+.location-yelp-card blockquote { flex: 1; font-size: 14px; line-height: 1.85; }
+@media (max-width: 1150px) { .location-yelp .location-yelp-track { grid-auto-columns: calc((100% - 32px) / 3); } }
+@media (max-width: 850px) { .location-yelp .location-yelp-track { grid-auto-columns: calc((100% - 16px) / 2); } }
+@media (max-width: 600px) { .location-yelp .location-yelp-track { grid-auto-columns: 100%; } }
+.location-page .location-thumbtack { background: var(--ap-navy); padding-block: clamp(28px, 3vw, 44px); }
+.location-page .location-thumbtack .duct-heading h3 { color: white; }
+.location-page .location-thumbtack .duct-heading .eyebrow { color: #a8e9eb; }
+.location-thumbtack .duct-heading { margin-bottom: 22px; }
+.location-thumbtack-logo { display: block; width: 130px; height: auto; margin: 12px auto; padding: 6px; border-radius: 10px; background: white; }
+.location-thumbtack .location-yelp-card { border-color: #d7e5ee; }
+.location-page .location-thumbtack-stars { color: #a76500; margin: 12px 0; letter-spacing: 2px; }
+
+.location-thumbtack .location-yelp-track:focus-visible { outline: 3px solid #a8e9eb; outline-offset: -3px; }
+
+.location-page :is(#duct-google-reviews, #yelp-reviews-title, #thumbtack-reviews-title) {
+  font-family: Montserrat, Arial, sans-serif;
+  font-size: clamp(24px, 3vw, 34px);
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -.7px;
+  text-transform: uppercase;
+}
+.location-stats { background: var(--ap-navy); padding: 28px 0; }
+.location-stats-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; max-width: 1200px; }
+.location-stat { display: flex; justify-content: center; align-items: center; gap: 18px; }
+.location-stat > img { padding: 10px; border-radius: 12px; background: white; flex-shrink: 0; }
+.location-page .location-stat p { color: #deedf7; margin: 0; }
+.location-page .location-stat .location-stat-number { color: white; font: 800 clamp(30px, 4vw, 46px)/1.2 Montserrat, Arial, sans-serif; font-variant-numeric: tabular-nums; }
+@media (max-width: 600px) {
+  .location-stats-grid { gap: 24px; grid-template-columns: 1fr; }
+  .location-stat { justify-content: flex-start; width: 290px; max-width: 100%; margin-inline: auto; }
+}
+
+@media (min-width: 1100px) {
+  .location-stats-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 28px; }
+  .location-stat { flex-direction: column; text-align: center; align-self: start; }
+  .location-stat > div { max-width: 250px; }
+}
+.brand-home .location-yelp .duct-heading {
+  max-width: 850px;
+  margin-inline: auto;
+  padding-inline: 20px;
+  text-align: center;
+}

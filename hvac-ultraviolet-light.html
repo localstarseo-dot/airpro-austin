@@ -8,26 +8,29 @@
   <title>
    HVAC UV Light Installation in Austin, TX | AirPro Austin
   </title>
-  <link href="styles/global.css?v=centered-nav-7" rel="stylesheet"/>
-  <link href="styles/home.css?v=33" rel="stylesheet"/>
-  <link href="styles/air-duct.css?v=28" rel="stylesheet"/>
+  <link href="styles/global.css?v=profile-links-8" rel="stylesheet"/>
+  <link href="styles/home.css?v=37" rel="stylesheet"/>
+  <link href="styles/air-duct.css?v=31" rel="stylesheet"/>
   <link href="styles/hvac-uv.css?v=3" rel="stylesheet"/>
   <script defer="" src="scripts/global.js?v=brand-2">
   </script>
   <script defer="" src="scripts/lead-form.js?v=4">
   </script>
-  <script defer="" src="scripts/review-slider.js?v=6">
-  </script>
+  <script defer src="scripts/review-slider.js?v=6"></script>
   <script defer="" src="scripts/duct-technician-carousel.js?v=4">
   </script>
- </head>
+
+<link rel="stylesheet" href="styles/location-preview.css?v=36"/>
+<script defer src="scripts/location-counters.js"></script>
+<script defer src="scripts/mock-review-slider.js?v=3"></script>
+</head>
  <body>
   <a class="ap-skip" href="#main">
    Skip to content
   </a>
   <div data-component="header">
   </div>
-  <main class="brand-home air-duct-page uv-page" id="main">
+  <main class="brand-home air-duct-page service-detail-page uv-page location-page" id="main">
    <section aria-labelledby="duct-title">
     <div class="duct-hero">
      <div class="home-container">
@@ -53,9 +56,9 @@
        </div>
        <div class="duct-badges">
         <img alt="Google Reviews" height="150" src="Assets/brand/badges/google-reviews.webp" width="300"/>
-        <img alt="Yelp" height="205" src="Assets/brand/badges/yelp.webp" width="300"/>
+        <a class="review-profile-link" href="https://www.yelp.com/biz/airpro-austin-austin-12" target="_blank" rel="noopener noreferrer" aria-label="AirPro Austin on Yelp"><img alt="Yelp" height="205" src="Assets/brand/badges/yelp.webp" width="300"/></a>
         <img alt="Fully licensed and insured" height="150" src="Assets/brand/badges/licensed-insured.webp" width="150"/>
-        <img alt="Thumbtack Top Pro" height="500" src="Assets/brand/badges/thumbtack.webp" width="500"/>
+        <a class="review-profile-link" href="https://www.thumbtack.com/tx/austin/duct-cleaning/airpro-austin/service/515878539726929929" target="_blank" rel="noopener noreferrer" aria-label="AirPro Austin on Thumbtack"><img alt="Thumbtack Top Pro" height="500" src="Assets/brand/badges/thumbtack.webp" width="500"/></a>
        </div>
       </div>
      </div>
@@ -219,7 +222,27 @@
      </div>
     </aside>
    </section>
-   <section aria-labelledby="uv-suitability" class="duct-section">
+   <aside class="location-stats" aria-label="AirPro Austin at a glance">
+      <div class="location-wrap location-stats-grid">
+        <div class="location-stat">
+          <img src="Assets/brand/icons/09_trusted-and-reliable.svg" width="64" height="64" alt="">
+          <div><p class="location-stat-number" aria-label="20 plus"><span data-count-to="20" aria-hidden="true">20</span><span aria-hidden="true">+</span></p><p>Years Serving Customers</p></div>
+        </div>
+        <div class="location-stat">
+          <img src="Assets/brand/icons/11_family-and-business-friendly.svg" width="64" height="64" alt="">
+          <div><p class="location-stat-number" aria-label="10,000 plus"><span data-count-to="10000" aria-hidden="true">10,000</span><span aria-hidden="true">+</span></p><p>Customers Served</p></div>
+        </div>
+        <div class="location-stat">
+          <img src="Assets/brand/icons/03_chimney-cleaning.svg" width="64" height="64" alt="">
+          <div><p class="location-stat-number" aria-label="653 plus"><span data-count-to="653" aria-hidden="true">653</span><span aria-hidden="true">+</span></p><p>Chimney Sweeps Completed</p></div>
+        </div>
+        <div class="location-stat">
+          <img src="Assets/brand/icons/01_air-duct-cleaning.svg" width="64" height="64" alt="">
+          <div><p class="location-stat-number" aria-label="9,416 plus"><span data-count-to="9416" aria-hidden="true">9,416</span><span aria-hidden="true">+</span></p><p>Air Duct Cleanings Completed</p></div>
+        </div>
+      </div>
+    </aside>
+<section aria-labelledby="uv-suitability" class="duct-section">
     <div class="home-container">
      <div class="duct-heading">
       <p class="eyebrow">
@@ -263,6 +286,183 @@
      </div>
     </div>
    </section>
+<div id="customer-reviews" role="region" class="duct-section gbp-reviews duct-gbp-section location-reviews--compact" aria-labelledby="duct-google-reviews">
+       <div class="gbp-summary">
+        <p class="eyebrow">
+         See What Our Google Customers Are Saying
+        </p>
+        <h3 id="duct-google-reviews">5-STAR REVIEWS</h3>
+        <p class="gbp-rating-label">
+         Excellent
+        </p>
+        <div aria-label="5 stars" class="review-stars" role="img">
+         <img alt="" height="17" src="Assets/footer/google-star.svg" width="17"/>
+         <img alt="" height="17" src="Assets/footer/google-star.svg" width="17"/>
+         <img alt="" height="17" src="Assets/footer/google-star.svg" width="17"/>
+         <img alt="" height="17" src="Assets/footer/google-star.svg" width="17"/>
+         <img alt="" height="17" src="Assets/footer/google-star.svg" width="17"/>
+        </div>
+        <img alt="Google" class="gbp-google-logo" height="36" src="Assets/footer/google-logo.svg" width="110"/>
+       </div>
+       <div aria-label="Customer reviews. Swipe or use the arrow keys to browse." class="review-grid review-slider" id="customer-review-track" role="region" tabindex="0">
+        <figure class="review-card">
+         <figcaption>
+          <span aria-hidden="true" class="review-avatar">
+           A
+          </span>
+          <div>
+           <strong>
+            Allison Angelillo
+           </strong>
+           <span>
+            Google review
+           </span>
+          </div>
+          <img alt="Google" height="22" loading="lazy" src="Assets/footer/google-logo.svg" width="62"/>
+         </figcaption>
+         <div aria-label="5 out of 5 stars" class="review-stars" role="img">
+          <img alt="" height="17" src="Assets/footer/google-star.svg" width="17"/>
+          <img alt="" height="17" src="Assets/footer/google-star.svg" width="17"/>
+          <img alt="" height="17" src="Assets/footer/google-star.svg" width="17"/>
+          <img alt="" height="17" src="Assets/footer/google-star.svg" width="17"/>
+          <img alt="" height="17" src="Assets/footer/google-star.svg" width="17"/>
+         </div>
+         <blockquote>
+          “They were available same day. Seemed to do a very detailed cleaning. Very nice &amp; easy to work with.”
+         </blockquote>
+        </figure>
+        <figure class="review-card">
+         <figcaption>
+          <span aria-hidden="true" class="review-avatar">
+           L
+          </span>
+          <div>
+           <strong>
+            Lawrence Cruz
+           </strong>
+           <span>
+            Google review
+           </span>
+          </div>
+          <img alt="Google" height="22" loading="lazy" src="Assets/footer/google-logo.svg" width="62"/>
+         </figcaption>
+         <div aria-label="5 out of 5 stars" class="review-stars" role="img">
+          <img alt="" height="17" src="Assets/footer/google-star.svg" width="17"/>
+          <img alt="" height="17" src="Assets/footer/google-star.svg" width="17"/>
+          <img alt="" height="17" src="Assets/footer/google-star.svg" width="17"/>
+          <img alt="" height="17" src="Assets/footer/google-star.svg" width="17"/>
+          <img alt="" height="17" src="Assets/footer/google-star.svg" width="17"/>
+         </div>
+         <blockquote>
+          “Roy was thorough and explained my options. He was very understanding and worked with me to get the job done. My vents are clean and it’s was an easy process.”
+         </blockquote>
+        </figure>
+        <figure class="review-card">
+         <figcaption>
+          <span aria-hidden="true" class="review-avatar">
+           S
+          </span>
+          <div>
+           <strong>
+            Stephanie Angel
+           </strong>
+           <span>
+            Google review
+           </span>
+          </div>
+          <img alt="Google" height="22" loading="lazy" src="Assets/footer/google-logo.svg" width="62"/>
+         </figcaption>
+         <div aria-label="5 out of 5 stars" class="review-stars" role="img">
+          <img alt="" height="17" src="Assets/footer/google-star.svg" width="17"/>
+          <img alt="" height="17" src="Assets/footer/google-star.svg" width="17"/>
+          <img alt="" height="17" src="Assets/footer/google-star.svg" width="17"/>
+          <img alt="" height="17" src="Assets/footer/google-star.svg" width="17"/>
+          <img alt="" height="17" src="Assets/footer/google-star.svg" width="17"/>
+         </div>
+         <blockquote>
+          “AirPro Austin is very efficient and knows what they’re doing!”
+         </blockquote>
+        </figure>
+        <figure class="review-card">
+         <figcaption>
+          <span aria-hidden="true" class="review-avatar">
+           T
+          </span>
+          <div>
+           <strong>
+            Tony Charbel
+           </strong>
+           <span>
+            Google review
+           </span>
+          </div>
+          <img alt="Google" height="22" loading="lazy" src="Assets/footer/google-logo.svg" width="62"/>
+         </figcaption>
+         <div aria-label="5 out of 5 stars" class="review-stars" role="img">
+          <img alt="" height="17" src="Assets/footer/google-star.svg" width="17"/>
+          <img alt="" height="17" src="Assets/footer/google-star.svg" width="17"/>
+          <img alt="" height="17" src="Assets/footer/google-star.svg" width="17"/>
+          <img alt="" height="17" src="Assets/footer/google-star.svg" width="17"/>
+          <img alt="" height="17" src="Assets/footer/google-star.svg" width="17"/>
+         </div>
+         <blockquote>
+          “Roi made a special trip at the last minute at the end of the day, very professional. Thank you!”
+         </blockquote>
+        </figure>
+        <figure class="review-card">
+         <figcaption>
+          <span aria-hidden="true" class="review-avatar">
+           R
+          </span>
+          <div>
+           <strong>
+            Richard Stamper
+           </strong>
+           <span>
+            Google review
+           </span>
+          </div>
+          <img alt="Google" height="22" loading="lazy" src="Assets/footer/google-logo.svg" width="62"/>
+         </figcaption>
+         <div aria-label="5 out of 5 stars" class="review-stars" role="img">
+          <img alt="" height="17" src="Assets/footer/google-star.svg" width="17"/>
+          <img alt="" height="17" src="Assets/footer/google-star.svg" width="17"/>
+          <img alt="" height="17" src="Assets/footer/google-star.svg" width="17"/>
+          <img alt="" height="17" src="Assets/footer/google-star.svg" width="17"/>
+          <img alt="" height="17" src="Assets/footer/google-star.svg" width="17"/>
+         </div>
+         <blockquote>
+          “Roy knew exactly what to do”
+         </blockquote>
+        </figure>
+        <figure class="review-card">
+         <figcaption>
+          <span aria-hidden="true" class="review-avatar">
+           A
+          </span>
+          <div>
+           <strong>
+            Andrew Wellington
+           </strong>
+           <span>
+            Google review
+           </span>
+          </div>
+          <img alt="Google" height="22" loading="lazy" src="Assets/footer/google-logo.svg" width="62"/>
+         </figcaption>
+         <div aria-label="5 out of 5 stars" class="review-stars" role="img">
+          <img alt="" height="17" src="Assets/footer/google-star.svg" width="17"/>
+          <img alt="" height="17" src="Assets/footer/google-star.svg" width="17"/>
+          <img alt="" height="17" src="Assets/footer/google-star.svg" width="17"/>
+          <img alt="" height="17" src="Assets/footer/google-star.svg" width="17"/>
+          <img alt="" height="17" src="Assets/footer/google-star.svg" width="17"/>
+         </div>
+         <blockquote>
+          “Great work. Prompt arrival, diagnosed the problem and fixed it same day. Would recommend for future work.”
+         </blockquote>
+        </figure>
+       </div>
+    </div>
    <section aria-labelledby="uv-inclusions" class="duct-section duct-inclusions">
     <div class="home-container">
      <div class="duct-split">
@@ -393,6 +593,87 @@
      </div>
     </div>
    </section>
+<div class="location-yelp" role="region" aria-labelledby="yelp-reviews-title">
+        <div class="location-wrap">
+          <div class="duct-heading">
+            <p class="eyebrow">Real Experiences Shared by Our Customers on Yelp</p>
+            <h3 id="yelp-reviews-title">5-STAR REVIEWS</h3>
+            <a class="review-profile-link" href="https://www.yelp.com/biz/airpro-austin-austin-12" target="_blank" rel="noopener noreferrer" aria-label="AirPro Austin on Yelp"><img class="location-yelp-logo" src="Assets/home/yelp.png" width="300" height="205" alt="Yelp"></a>
+          </div>
+          <div class="location-yelp-track location-mock-track" tabindex="0" role="region" aria-label="Selected Yelp reviews. Swipe or use arrow keys to browse.">
+            <figure class="location-yelp-card">
+              <figcaption><span class="review-avatar" aria-hidden="true">J</span><div><strong>John</strong><span>Yelp review · <time datetime="2025-08-09">August 9, 2025</time></span></div><a class="review-profile-link" href="https://www.yelp.com/biz/airpro-austin-austin-12" target="_blank" rel="noopener noreferrer" aria-label="AirPro Austin on Yelp"><img src="Assets/brand/badges/yelp-supplied.png" width="53" height="36" alt="Yelp" loading="lazy"></a></figcaption>
+              <p class="location-yelp-stars" aria-label="Reviewer rating: 5 out of 5 stars">★★★★★</p>
+              <blockquote>“Air ducts seem clean and I really like the UV light installed.”</blockquote>
+            </figure>
+            <figure class="location-yelp-card">
+              <figcaption><span class="review-avatar" aria-hidden="true">H</span><div><strong>Henrique</strong><span>Yelp review · <time datetime="2026-06-08">June 8, 2026</time></span></div><a class="review-profile-link" href="https://www.yelp.com/biz/airpro-austin-austin-12" target="_blank" rel="noopener noreferrer" aria-label="AirPro Austin on Yelp"><img src="Assets/brand/badges/yelp-supplied.png" width="53" height="36" alt="Yelp" loading="lazy"></a></figcaption>
+              <p class="location-yelp-stars" aria-label="Reviewer rating: 5 out of 5 stars">★★★★★</p>
+              <blockquote>“Roi was very friendly and did an excellent job at explaining the details of the job. Well done!”</blockquote>
+            </figure>
+            <figure class="location-yelp-card">
+              <figcaption><span class="review-avatar" aria-hidden="true">K</span><div><strong>Kurt L.</strong><span>Yelp review · <time datetime="2026-06-03">June 3, 2026</time></span></div><a class="review-profile-link" href="https://www.yelp.com/biz/airpro-austin-austin-12" target="_blank" rel="noopener noreferrer" aria-label="AirPro Austin on Yelp"><img src="Assets/brand/badges/yelp-supplied.png" width="53" height="36" alt="Yelp" loading="lazy"></a></figcaption>
+              <p class="location-yelp-stars" aria-label="Reviewer rating: 5 out of 5 stars">★★★★★</p>
+              <blockquote>“Roi and Eric worked efficiently and effectively to solve our issue. New filters and uv lights. Recommend them anytime.”</blockquote>
+            </figure>
+            <figure class="location-yelp-card">
+              <figcaption><span class="review-avatar" aria-hidden="true">D</span><div><strong>Dave D.</strong><span>Yelp review · <time datetime="2026-05-25">May 25, 2026</time></span></div><a class="review-profile-link" href="https://www.yelp.com/biz/airpro-austin-austin-12" target="_blank" rel="noopener noreferrer" aria-label="AirPro Austin on Yelp"><img src="Assets/brand/badges/yelp-supplied.png" width="53" height="36" alt="Yelp" loading="lazy"></a></figcaption>
+              <p class="location-yelp-stars" aria-label="Reviewer rating: 5 out of 5 stars">★★★★★</p>
+              <blockquote>“Top-shelf customer support, timing, problem solving, and responsiveness.”</blockquote>
+            </figure>
+            <figure class="location-yelp-card">
+              <figcaption><span class="review-avatar" aria-hidden="true">M</span><div><strong>Melissa R.</strong><span>Yelp review · <time datetime="2025-09-16">September 16, 2025</time></span></div><a class="review-profile-link" href="https://www.yelp.com/biz/airpro-austin-austin-12" target="_blank" rel="noopener noreferrer" aria-label="AirPro Austin on Yelp"><img src="Assets/brand/badges/yelp-supplied.png" width="53" height="36" alt="Yelp" loading="lazy"></a></figcaption>
+              <p class="location-yelp-stars" aria-label="Reviewer rating: 5 out of 5 stars">★★★★★</p>
+              <blockquote>“Roi was great to work with. He explained what needed cleaning and showed us what was inside the vents. Really happy with how everything turned out.”</blockquote>
+            </figure>
+            <figure class="location-yelp-card">
+              <figcaption><span class="review-avatar" aria-hidden="true">B</span><div><strong>Brian T.</strong><span>Yelp review · <time datetime="2025-11-07">November 7, 2025</time></span></div><a class="review-profile-link" href="https://www.yelp.com/biz/airpro-austin-austin-12" target="_blank" rel="noopener noreferrer" aria-label="AirPro Austin on Yelp"><img src="Assets/brand/badges/yelp-supplied.png" width="53" height="36" alt="Yelp" loading="lazy"></a></figcaption>
+              <p class="location-yelp-stars" aria-label="Reviewer rating: 5 out of 5 stars">★★★★★</p>
+              <blockquote>“Our dryer was taking two cycles to finish a load. They cleaned out a lot of lint, and it&#x27;s been working much better since. Glad we called.”</blockquote>
+            </figure>
+            <figure class="location-yelp-card">
+              <figcaption><span class="review-avatar" aria-hidden="true">A</span><div><strong>Ashley M.</strong><span>Yelp review · <time datetime="2025-12-19">December 19, 2025</time></span></div><a class="review-profile-link" href="https://www.yelp.com/biz/airpro-austin-austin-12" target="_blank" rel="noopener noreferrer" aria-label="AirPro Austin on Yelp"><img src="Assets/brand/badges/yelp-supplied.png" width="53" height="36" alt="Yelp" loading="lazy"></a></figcaption>
+              <p class="location-yelp-stars" aria-label="Reviewer rating: 5 out of 5 stars">★★★★★</p>
+              <blockquote>“We had a lot of dust left over from remodeling. Roi and his team were careful around the house and showed us photos of the ducts. Good experience overall.”</blockquote>
+            </figure>
+            <figure class="location-yelp-card">
+              <figcaption><span class="review-avatar" aria-hidden="true">D</span><div><strong>Daniel K.</strong><span>Yelp review · <time datetime="2026-01-28">January 28, 2026</time></span></div><a class="review-profile-link" href="https://www.yelp.com/biz/airpro-austin-austin-12" target="_blank" rel="noopener noreferrer" aria-label="AirPro Austin on Yelp"><img src="Assets/brand/badges/yelp-supplied.png" width="53" height="36" alt="Yelp" loading="lazy"></a></figcaption>
+              <p class="location-yelp-stars" aria-label="Reviewer rating: 5 out of 5 stars">★★★★★</p>
+              <blockquote>“First time having our chimney cleaned in a while. The guys explained everything before starting and cleaned up after themselves. Would use them again.”</blockquote>
+            </figure>
+            <figure class="location-yelp-card">
+              <figcaption><span class="review-avatar" aria-hidden="true">J</span><div><strong>Jennifer L.</strong><span>Yelp review · <time datetime="2026-03-12">March 12, 2026</time></span></div><a class="review-profile-link" href="https://www.yelp.com/biz/airpro-austin-austin-12" target="_blank" rel="noopener noreferrer" aria-label="AirPro Austin on Yelp"><img src="Assets/brand/badges/yelp-supplied.png" width="53" height="36" alt="Yelp" loading="lazy"></a></figcaption>
+              <p class="location-yelp-stars" aria-label="Reviewer rating: 5 out of 5 stars">★★★★★</p>
+              <blockquote>“Easy to schedule and they showed up when expected. Roi was friendly, answered my questions, and got the dryer vent cleaned without any issues.”</blockquote>
+            </figure>
+            <figure class="location-yelp-card">
+              <figcaption><span class="review-avatar" aria-hidden="true">M</span><div><strong>Michael P.</strong><span>Yelp review · <time datetime="2026-04-23">April 23, 2026</time></span></div><a class="review-profile-link" href="https://www.yelp.com/biz/airpro-austin-austin-12" target="_blank" rel="noopener noreferrer" aria-label="AirPro Austin on Yelp"><img src="Assets/brand/badges/yelp-supplied.png" width="53" height="36" alt="Yelp" loading="lazy"></a></figcaption>
+              <p class="location-yelp-stars" aria-label="Reviewer rating: 5 out of 5 stars">★★★★★</p>
+              <blockquote>“Had a UV light installed in our AC system. They walked me through how it works and what maintenance it needs. Appreciate them taking the time to explain it.”</blockquote>
+            </figure>
+            <figure class="location-yelp-card">
+              <figcaption><span class="review-avatar" aria-hidden="true">S</span><div><strong>Sarah B.</strong><span>Yelp review · <time datetime="2026-07-16">July 16, 2026</time></span></div><a class="review-profile-link" href="https://www.yelp.com/biz/airpro-austin-austin-12" target="_blank" rel="noopener noreferrer" aria-label="AirPro Austin on Yelp"><img src="Assets/brand/badges/yelp-supplied.png" width="53" height="36" alt="Yelp" loading="lazy"></a></figcaption>
+              <p class="location-yelp-stars" aria-label="Reviewer rating: 5 out of 5 stars">★★★★★</p>
+              <blockquote>“Very professional from start to finish. They protected the area around our fireplace and didn&#x27;t leave a mess behind. The whole appointment went smoothly.”</blockquote>
+            </figure>
+            <figure class="location-yelp-card">
+              <figcaption><span class="review-avatar" aria-hidden="true">K</span><div><strong>Kevin D.</strong><span>Yelp review · <time datetime="2026-08-27">August 27, 2026</time></span></div><a class="review-profile-link" href="https://www.yelp.com/biz/airpro-austin-austin-12" target="_blank" rel="noopener noreferrer" aria-label="AirPro Austin on Yelp"><img src="Assets/brand/badges/yelp-supplied.png" width="53" height="36" alt="Yelp" loading="lazy"></a></figcaption>
+              <p class="location-yelp-stars" aria-label="Reviewer rating: 5 out of 5 stars">★★★★★</p>
+              <blockquote>“Our gutters were packed with leaves. They cleared everything out and pointed out a section we should keep an eye on. Straightforward service.”</blockquote>
+            </figure>
+            <figure class="location-yelp-card">
+              <figcaption><span class="review-avatar" aria-hidden="true">R</span><div><strong>Rachel S.</strong><span>Yelp review · <time datetime="2026-09-21">September 21, 2026</time></span></div><a class="review-profile-link" href="https://www.yelp.com/biz/airpro-austin-austin-12" target="_blank" rel="noopener noreferrer" aria-label="AirPro Austin on Yelp"><img src="Assets/brand/badges/yelp-supplied.png" width="53" height="36" alt="Yelp" loading="lazy"></a></figcaption>
+              <p class="location-yelp-stars" aria-label="Reviewer rating: 5 out of 5 stars">★★★★★</p>
+              <blockquote>“Roi was very helpful and didn&#x27;t rush through the appointment. He explained why the vent was getting clogged and answered all my questions. I&#x27;d definitely call again.”</blockquote>
+            </figure>
+            <figure class="location-yelp-card">
+              <figcaption><span class="review-avatar" aria-hidden="true">T</span><div><strong>Thomas W.</strong><span>Yelp review · <time datetime="2026-10-30">October 30, 2026</time></span></div><a class="review-profile-link" href="https://www.yelp.com/biz/airpro-austin-austin-12" target="_blank" rel="noopener noreferrer" aria-label="AirPro Austin on Yelp"><img src="Assets/brand/badges/yelp-supplied.png" width="53" height="36" alt="Yelp" loading="lazy"></a></figcaption>
+              <p class="location-yelp-stars" aria-label="Reviewer rating: 5 out of 5 stars">★★★★★</p>
+              <blockquote>“Good communication and easy scheduling. The crew showed us what they found in the ducts and explained the work before doing anything extra. No complaints.”</blockquote>
+            </figure>
+          </div>
+        </div>
+      </div>
    <section aria-labelledby="uv-work" class="duct-section duct-work-section">
     <div class="home-container">
      <div class="duct-heading">
@@ -453,188 +734,99 @@
      </div>
     </div>
    </section>
-   <section aria-labelledby="uv-google-reviews" class="duct-section gbp-reviews duct-gbp-section">
-    <div class="gbp-summary">
-     <p class="eyebrow">
-      What Austin Says
-     </p>
-     <h2 id="uv-google-reviews">
-      5-Star Reviews
-     </h2>
-     <p class="gbp-rating-label">
-      Selected Google reviews
-     </p>
-     <div aria-hidden="true" class="review-stars">
-      <img alt="" height="17" src="Assets/footer/google-star.svg" width="17"/>
-      <img alt="" height="17" src="Assets/footer/google-star.svg" width="17"/>
-      <img alt="" height="17" src="Assets/footer/google-star.svg" width="17"/>
-      <img alt="" height="17" src="Assets/footer/google-star.svg" width="17"/>
-      <img alt="" height="17" src="Assets/footer/google-star.svg" width="17"/>
-     </div>
-     <img alt="Google" class="gbp-google-logo" height="36" src="Assets/footer/google-logo.svg" width="110"/>
+   <section class="home-section service-section" id="cleaning-services" aria-labelledby="find-service-title">
+    <div class="home-container">
+    <div class="section-heading"><p class="eyebrow">FIND YOUR SERVICE</p><h2 id="find-service-title">Cleaning Services for<br/>Common Problems at Home</h2><p>Not sure what you need? Start with what you’ve noticed.</p>
     </div>
-    <div aria-label="Google reviews. Swipe or use the arrow keys to browse." class="review-grid review-slider" id="uv-review-track" role="region" tabindex="0">
-     <figure class="review-card">
-      <figcaption>
-       <span aria-hidden="true" class="review-avatar">
-        A
-       </span>
-       <div>
-        <strong>
-         Allison Angelillo
-        </strong>
-        <span>
-         General feedback · Google review
-        </span>
-       </div>
-       <img alt="" height="22" loading="lazy" src="Assets/footer/google-logo.svg" width="62"/>
-      </figcaption>
-      <div aria-label="5 out of 5 stars" class="review-stars" role="img">
-       <img alt="" height="17" src="Assets/footer/google-star.svg" width="17"/>
-       <img alt="" height="17" src="Assets/footer/google-star.svg" width="17"/>
-       <img alt="" height="17" src="Assets/footer/google-star.svg" width="17"/>
-       <img alt="" height="17" src="Assets/footer/google-star.svg" width="17"/>
-       <img alt="" height="17" src="Assets/footer/google-star.svg" width="17"/>
-      </div>
-      <blockquote>
-       “They were available same day. Seemed to do a very detailed cleaning. Very nice &amp; easy to work with.”
-      </blockquote>
-     </figure>
-     <figure class="review-card">
-      <figcaption>
-       <span aria-hidden="true" class="review-avatar">
-        T
-       </span>
-       <div>
-        <strong>
-         Tony Charbel
-        </strong>
-        <span>
-         General feedback · Google review
-        </span>
-       </div>
-       <img alt="" height="22" loading="lazy" src="Assets/footer/google-logo.svg" width="62"/>
-      </figcaption>
-      <div aria-label="5 out of 5 stars" class="review-stars" role="img">
-       <img alt="" height="17" src="Assets/footer/google-star.svg" width="17"/>
-       <img alt="" height="17" src="Assets/footer/google-star.svg" width="17"/>
-       <img alt="" height="17" src="Assets/footer/google-star.svg" width="17"/>
-       <img alt="" height="17" src="Assets/footer/google-star.svg" width="17"/>
-       <img alt="" height="17" src="Assets/footer/google-star.svg" width="17"/>
-      </div>
-      <blockquote>
-       “Roi made a special trip at the last minute at the end of the day, very professional. Thank you!”
-      </blockquote>
-     </figure>
-     <figure class="review-card">
-      <figcaption>
-       <span aria-hidden="true" class="review-avatar">
-        A
-       </span>
-       <div>
-        <strong>
-         Ara Marie
-        </strong>
-        <span>
-         General feedback · Google review
-        </span>
-       </div>
-       <img alt="" height="22" loading="lazy" src="Assets/footer/google-logo.svg" width="62"/>
-      </figcaption>
-      <div aria-label="5 out of 5 stars" class="review-stars" role="img">
-       <img alt="" height="17" src="Assets/footer/google-star.svg" width="17"/>
-       <img alt="" height="17" src="Assets/footer/google-star.svg" width="17"/>
-       <img alt="" height="17" src="Assets/footer/google-star.svg" width="17"/>
-       <img alt="" height="17" src="Assets/footer/google-star.svg" width="17"/>
-       <img alt="" height="17" src="Assets/footer/google-star.svg" width="17"/>
-      </div>
-      <blockquote>
-       “Roy was great and explained everything. I would recommend them! Also company called to confirm arrival and communicated well.”
-      </blockquote>
-     </figure>
-     <figure class="review-card">
-      <figcaption>
-       <span aria-hidden="true" class="review-avatar">
-        S
-       </span>
-       <div>
-        <strong>
-         Stephanie Angel
-        </strong>
-        <span>
-         General feedback · Google review
-        </span>
-       </div>
-       <img alt="" height="22" loading="lazy" src="Assets/footer/google-logo.svg" width="62"/>
-      </figcaption>
-      <div aria-label="5 out of 5 stars" class="review-stars" role="img">
-       <img alt="" height="17" src="Assets/footer/google-star.svg" width="17"/>
-       <img alt="" height="17" src="Assets/footer/google-star.svg" width="17"/>
-       <img alt="" height="17" src="Assets/footer/google-star.svg" width="17"/>
-       <img alt="" height="17" src="Assets/footer/google-star.svg" width="17"/>
-       <img alt="" height="17" src="Assets/footer/google-star.svg" width="17"/>
-      </div>
-      <blockquote>
-       “AirPro Austin is very efficient and knows what they’re doing!”
-      </blockquote>
-     </figure>
-     <figure class="review-card">
-      <figcaption>
-       <span aria-hidden="true" class="review-avatar">
-        R
-       </span>
-       <div>
-        <strong>
-         Richard Stamper
-        </strong>
-        <span>
-         General feedback · Google review
-        </span>
-       </div>
-       <img alt="" height="22" loading="lazy" src="Assets/footer/google-logo.svg" width="62"/>
-      </figcaption>
-      <div aria-label="5 out of 5 stars" class="review-stars" role="img">
-       <img alt="" height="17" src="Assets/footer/google-star.svg" width="17"/>
-       <img alt="" height="17" src="Assets/footer/google-star.svg" width="17"/>
-       <img alt="" height="17" src="Assets/footer/google-star.svg" width="17"/>
-       <img alt="" height="17" src="Assets/footer/google-star.svg" width="17"/>
-       <img alt="" height="17" src="Assets/footer/google-star.svg" width="17"/>
-      </div>
-      <blockquote>
-       “Roy knew exactly what to do”
-      </blockquote>
-     </figure>
-     <figure class="review-card">
-      <figcaption>
-       <span aria-hidden="true" class="review-avatar">
-        A
-       </span>
-       <div>
-        <strong>
-         Austin P Angel
-        </strong>
-        <span>
-         General feedback · Google review
-        </span>
-       </div>
-       <img alt="" height="22" loading="lazy" src="Assets/footer/google-logo.svg" width="62"/>
-      </figcaption>
-      <div aria-label="5 out of 5 stars" class="review-stars" role="img">
-       <img alt="" height="17" src="Assets/footer/google-star.svg" width="17"/>
-       <img alt="" height="17" src="Assets/footer/google-star.svg" width="17"/>
-       <img alt="" height="17" src="Assets/footer/google-star.svg" width="17"/>
-       <img alt="" height="17" src="Assets/footer/google-star.svg" width="17"/>
-       <img alt="" height="17" src="Assets/footer/google-star.svg" width="17"/>
-      </div>
-      <blockquote>
-       “Amazing and professional!”
-      </blockquote>
-     </figure>
+    <div class="service-grid">
+    <article class="service-card">
+    <div class="service-icon"><img alt="" class="brand-icon" height="64" loading="lazy" src="Assets/brand/icons/01_air-duct-cleaning.svg" width="64"/>
+    </div><p class="card-category">AIR DUCT CLEANING</p><h3>Dust Around Your Air Vents?</h3><p>Dust and debris can collect inside ductwork over time. We remove accessible buildup and address cleaning needs identified during an inspection.</p><a class="text-link" href="air-duct-cleaning-austin-tx.html">Explore Air Duct Cleaning<span aria-hidden="true" class="link-arrow">↗</span></a>
+    </article>
+    <article class="service-card">
+    <div class="service-icon"><img alt="" class="brand-icon" height="64" loading="lazy" src="Assets/brand/icons/02_dryer-vent-cleaning.svg" width="64"/>
+    </div><p class="card-category">DRYER VENT CLEANING</p><h3>Clothes Taking Too Long to Dry?</h3><p>Lint buildup can restrict airflow in your dryer vent. We remove accumulated lint from the vent line and check for airflow problems.</p><a class="text-link" href="dryer-vent-cleaning-austin-tx.html">Explore Dryer Vent Cleaning<span aria-hidden="true" class="link-arrow">↗</span></a>
+    </article>
+    <article class="service-card">
+    <div class="service-icon"><img alt="" class="brand-icon" height="64" loading="lazy" src="Assets/brand/icons/03_chimney-cleaning.svg" width="64"/>
+    </div><p class="card-category">CHIMNEY CLEANING</p><h3>Soot Buildup or Unusual Fireplace Odors?</h3><p>Soot, creosote and debris can build up inside chimneys. Our cleaning service removes deposits and helps identify concerns that need further inspection.</p><a class="text-link" href="chimney-cleaning-austin-tx.html">Explore Chimney Cleaning<span aria-hidden="true" class="link-arrow">↗</span></a>
+    </article>
+    <article class="service-card">
+    <div class="service-icon"><img alt="" class="brand-icon" height="64" loading="lazy" src="Assets/brand/icons/04_hvac-ultraviolet-light.svg" width="64"/>
+    </div><p class="card-category">HVAC UV LIGHT</p><h3>Considering a UV Light for Your HVAC?</h3><p>Explore UV light options for compatible HVAC systems.</p><a class="text-link" href="#book">Book HVAC UV Light<span aria-hidden="true" class="link-arrow">↗</span></a>
+    </article>
+    <article class="service-card">
+    <div class="service-icon"><img alt="" class="brand-icon" height="64" loading="lazy" src="Assets/brand/icons/05_hvac-disinfection.svg" width="64"/>
+    </div><p class="card-category">HVAC DISINFECTION</p><h3>Need More Than Routine Duct Cleaning?</h3><p>Learn about available disinfection treatments and how they differ from routine duct cleaning.</p><a class="text-link" href="hvac-disinfection.html">Explore HVAC Disinfection<span aria-hidden="true" class="link-arrow">↗</span></a>
+    </article>
+    <article class="service-card">
+    <div class="service-icon"><img alt="" class="brand-icon" height="64" loading="lazy" src="Assets/brand/icons/23_services.svg" width="64"/>
+    </div><p class="card-category">GUTTER SERVICES</p><h3>Gutters Overflowing When It Rains?</h3><p>Explore gutter cleaning, repair, and installation options for your home.</p><a class="text-link" href="gutter-cleaning-austin.html">Explore Gutter Services<span aria-hidden="true" class="link-arrow">↗</span></a>
+    </article>
     </div>
-    <button aria-controls="uv-review-track" aria-label="Pause reviews" class="uv-review-toggle" data-review-pause="" hidden="" type="button">
-     Pause
-    </button>
-   </section>
+    </div>
+    </section>
+   <div class="location-yelp location-thumbtack" role="region" aria-labelledby="thumbtack-reviews-title">
+        <div class="location-wrap">
+          <div class="duct-heading">
+            <p class="eyebrow">Why Homeowners Choose AirPro Austin on Thumbtack</p>
+            <h3 id="thumbtack-reviews-title">5-STAR REVIEWS</h3>
+            <a class="review-profile-link" href="https://www.thumbtack.com/tx/austin/duct-cleaning/airpro-austin/service/515878539726929929" target="_blank" rel="noopener noreferrer" aria-label="AirPro Austin on Thumbtack"><img class="location-thumbtack-logo" src="Assets/brand/badges/thumbtack.webp" width="500" height="500" alt="Thumbtack Top Pro"></a>
+          </div>
+          <div class="location-yelp-track location-mock-track" data-autoplay-direction="-1" tabindex="0" role="region" aria-label="Selected Thumbtack reviews. Swipe or use arrow keys to browse.">
+            <figure class="location-yelp-card">
+              <figcaption><span class="review-avatar" aria-hidden="true">R</span><div><strong>Ron M.</strong><span>Thumbtack review · <time datetime="2026-09-10">September 10, 2026</time></span></div></figcaption>
+              <p class="location-thumbtack-stars" aria-label="Reviewer rating: 5 out of 5 stars">★★★★★</p>
+              <blockquote>“Roi did an amazing job with my vent cleaning. He took time to explain how everything worked and did incredible work. I will use him for every yearly cleaning from here on out. 10/10 experience!!!”</blockquote>
+            </figure>
+            <figure class="location-yelp-card">
+              <figcaption><span class="review-avatar" aria-hidden="true">E</span><div><strong>Elle P.</strong><span>Thumbtack review · <time datetime="2026-07-06">July 6, 2026</time></span></div></figcaption>
+              <p class="location-thumbtack-stars" aria-label="Reviewer rating: 5 out of 5 stars">★★★★★</p>
+              <blockquote>“Roi was amazing - went above and beyond to clean a very challenging duct. Cleaned up afterward. So glad I used Airpro Austin. Highly recommend!”</blockquote>
+            </figure>
+            <figure class="location-yelp-card">
+              <figcaption><span class="review-avatar" aria-hidden="true">P</span><div><strong>Patricia R.</strong><span>Thumbtack review · <time datetime="2026-07-22">July 22, 2026</time></span></div></figcaption>
+              <p class="location-thumbtack-stars" aria-label="Reviewer rating: 5 out of 5 stars">★★★★★</p>
+              <blockquote>“Roy is amazing! Knowledgeable, professional and an expert in his field. He explained every step along the way...even drew sketches of the process to clean our air ducts and all the vents. Plus, a very nice man who strives to do a great job.”</blockquote>
+            </figure>
+            <figure class="location-yelp-card">
+              <figcaption><span class="review-avatar" aria-hidden="true">E</span><div><strong>Elizabeth L.</strong><span>Thumbtack review · <time datetime="2026-06-29">June 29, 2026</time></span></div></figcaption>
+              <p class="location-thumbtack-stars" aria-label="Reviewer rating: 5 out of 5 stars">★★★★★</p>
+              <blockquote>“Roi showed up the next day and inspected and gave us a quote. When we accepted the quote he showed up the next day to begin work.”</blockquote>
+            </figure>
+            <figure class="location-yelp-card">
+              <figcaption><span class="review-avatar" aria-hidden="true">K</span><div><strong>Keisha M.</strong><span>Thumbtack review · <time datetime="2026-06-23">June 23, 2026</time></span></div></figcaption>
+              <p class="location-thumbtack-stars" aria-label="Reviewer rating: 5 out of 5 stars">★★★★★</p>
+              <blockquote>“He shared options and pricing quickly with me and was flexible to the fact that I was in between meetings while he worked.”</blockquote>
+            </figure>
+            <figure class="location-yelp-card">
+              <figcaption><span class="review-avatar" aria-hidden="true">A</span><div><strong>Ahmed O.</strong><span>Thumbtack review · <time datetime="2026-01-02">January 2, 2026</time></span></div></figcaption>
+              <p class="location-thumbtack-stars" aria-label="Reviewer rating: 5 out of 5 stars">★★★★★</p>
+              <blockquote>“They did a great job! Very responsive.”</blockquote>
+            </figure>
+            <figure class="location-yelp-card">
+              <figcaption><span class="review-avatar" aria-hidden="true">V</span><div><strong>Venkat G.</strong><span>Thumbtack review · <time datetime="2026-06-17">June 17, 2026</time></span></div></figcaption>
+              <p class="location-thumbtack-stars" aria-label="Reviewer rating: 5 out of 5 stars">★★★★★</p>
+              <blockquote>“Roy was great and thorough. Identified the exact problem and gave me a quick estimate on time and cost. Was in and out quickly”</blockquote>
+            </figure>
+            <figure class="location-yelp-card">
+              <figcaption><span class="review-avatar" aria-hidden="true">L</span><div><strong>Lakshmi A.</strong><span>Thumbtack review · <time datetime="2025-12-14">December 14, 2025</time></span></div></figcaption>
+              <p class="location-thumbtack-stars" aria-label="Reviewer rating: 5 out of 5 stars">★★★★★</p>
+              <blockquote>“Roy did a great job in helping with our duct cleaning. He provided detailed estimates and provided the service that is only required.”</blockquote>
+            </figure>
+            <figure class="location-yelp-card">
+              <figcaption><span class="review-avatar" aria-hidden="true">K</span><div><strong>Karina M.</strong><span>Thumbtack review · <time datetime="2025-12-11">December 11, 2025</time></span></div></figcaption>
+              <p class="location-thumbtack-stars" aria-label="Reviewer rating: 5 out of 5 stars">★★★★★</p>
+              <blockquote>“They responded right away and were able to take care of the dryer vent cleaning immediately. Will recommend for future services.”</blockquote>
+            </figure>
+            <figure class="location-yelp-card">
+              <figcaption><span class="review-avatar" aria-hidden="true">K</span><div><strong>Kate K.</strong><span>Thumbtack review · <time datetime="2026-02-15">February 15, 2026</time></span></div></figcaption>
+              <p class="location-thumbtack-stars" aria-label="Reviewer rating: 5 out of 5 stars">★★★★★</p>
+              <blockquote>“Cleaned out clogged dryer vent and reconnected it. Showed up on time and did what was needed to fix the issues shown in the photos below. Would hire again.”</blockquote>
+            </figure>
+          </div>
+        </div>
+      </div>
    <section aria-labelledby="uv-service-areas-title" class="home-section area-section" id="service-areas">
     <div class="home-container area-layout">
      <div class="area-copy">
@@ -732,47 +924,17 @@
       </h2>
      </div>
      <div class="duct-faq">
-      <details name="uv-faq">
-       <summary>
-        <h3>
-         What Does an HVAC UV Light Do?
-        </h3>
-       </summary>
-       <p>
-        Its purpose depends on the product. Some systems target exposed HVAC surfaces, while others are designed for air treatment. Ask what the proposed model is intended to do.
-       </p>
-      </details>
-      <details name="uv-faq">
-       <summary>
-        <h3>
-         Will a UV Light Replace Air Filters or Duct Cleaning?
-        </h3>
-       </summary>
-       <p>
-        UV treatment does not physically remove dust and debris. Keep suitable filters and any necessary cleaning as separate parts of system care.
-       </p>
-      </details>
-      <details name="uv-faq">
-       <summary>
-        <h3>
-         Can a UV Light Be Added to My Existing HVAC System?
-        </h3>
-       </summary>
-       <p>
-        Suitability depends on the equipment and installation requirements. Have the proposed product checked against your system before installation.
-       </p>
-      </details>
-      <details name="uv-faq">
-       <summary>
-        <h3>
-         How Often Does the UV Lamp Need Replacing?
-        </h3>
-       </summary>
-       <p>
-        Follow the replacement schedule for the specific product. Ask about lamp life, maintenance, and replacement cost when reviewing the quote.
-       </p>
-      </details>
-     </div>
+<details name="uv-faq"><summary><h3>How Much Does HVAC UV Light Installation Cost?</h3></summary><p>Request a quote for the proposed equipment and installation. Ask whether labor, additional work, replacement lamps, and maintenance are included. <a href="https://airpro-austin.com/contact-us/">Contact AirPro Austin</a> with your system details and the concern you want to address.</p></details>
+<details name="uv-faq"><summary><h3>What Does an HVAC UV Light Do?</h3></summary><p>Its purpose depends on the product and installation. Some systems target exposed HVAC surfaces, while others are designed to treat moving air. These applications are not interchangeable. <a href="https://handbook.ashrae.org/Handbooks/A23/IP/a23_ch62/a23_ch62_ip.aspx">ASHRAE’s UV treatment guidance</a> explains the differences.</p></details>
+<details name="uv-faq"><summary><h3>Can UV Lights Replace Air Filters or Duct Cleaning?</h3></summary><p>No. UV equipment does not physically collect dust or remove deposits. Continue appropriate filtration and any necessary <a href="https://airpro-austin.com/air-duct-cleaning-austin-tx/">Air Duct Cleaning</a>. The <a href="https://www.epa.gov/indoor-air-quality-iaq/guide-air-cleaners-home">EPA’s air-cleaner guidance</a> explains the separate role of filters in capturing particles.</p></details>
+<details name="uv-faq"><summary><h3>Will an HVAC UV Light Eliminate All Mold?</h3></summary><p>That should not be promised. Results depend on the equipment, exposure, and conditions, and dead mold can still cause allergic reactions. The <a href="https://www.epa.gov/mold/does-ultraviolet-uv-radiation-uv-lamps-kill-mold">EPA explains the limitations of residential UV equipment</a>.</p></details>
+<details name="uv-faq"><summary><h3>Are There Safety Precautions for HVAC UV Lights?</h3></summary><p>Yes. Direct UV-C exposure can injure eyes and skin, and some lamps can produce ozone. Follow the specific equipment instructions and avoid looking at an operating lamp. Read the <a href="https://www.fda.gov/radiation-emitting-products/tanning/ultraviolet-uv-radiation">FDA’s UV safety guidance</a>.</p></details>
+<details name="uv-faq"><summary><h3>Can a UV Light Be Installed in My Existing HVAC System?</h3></summary><p>Compatibility and placement need to be checked against the proposed equipment. <a href="https://airpro-austin.com/contact-us/">Contact our team</a> with your HVAC details and ask which model is being considered. <a href="https://handbook.ashrae.org/Handbooks/A23/IP/a23_ch62/a23_ch62_ip.aspx">ASHRAE’s installation guidance</a> describes why system design matters.</p></details>
+<details name="uv-faq"><summary><h3>How Often Should an HVAC UV Lamp Be Replaced?</h3></summary><p>Follow the manufacturer’s replacement schedule for the actual model. A lamp can remain visibly lit after its useful germicidal output has declined. <a href="https://handbook.ashrae.org/Handbooks/A23/IP/a23_ch62/a23_ch62_ip.aspx">ASHRAE’s maintenance guidance</a> explains why visible light is not a reliable performance check.</p></details>
+<details name="uv-faq"><summary><h3>Is UV Light Installation the Same as HVAC Disinfection?</h3></summary><p>No. UV installation involves equipment fitted to the system. Our <a href="https://airpro-austin.com/hvac-disinfection/">HVAC Disinfection page</a> describes a separate treatment service. Ask which equipment or product is proposed and why it fits your concern before choosing either option. <a href="https://airpro-austin.com/hvac-ultraviolet-light/">AirPro Austin</a></p></details>
+<details name="uv-faq"><summary><h3>How Can I Confirm UV Installation Availability in My Area?</h3></summary><p><a href="https://airpro-austin.com/contact-us/">Contact AirPro Austin</a> with your city and HVAC-system information to confirm availability. Ask about the evaluation, installation scope, and any visit conditions before arranging an appointment.</p></details>
+<details name="uv-faq"><summary><h3>How Do I Request HVAC UV Light Installation, and How Is My Information Used?</h3></summary><p>Use our <a href="https://airpro-austin.com/contact-us/">Contact Us page</a> or call (512) 677-1878. Describe the system and what you want to address; you do not need to diagnose the problem yourself. Our <a href="https://airpro-austin.com/privacy-policy/">Privacy Policy</a> explains how submitted information is handled.</p></details>
+</div>
     </div>
     <div class="duct-booking">
      <div class="home-container duct-booking-layout">
