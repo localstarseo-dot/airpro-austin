@@ -1,0 +1,249 @@
+.chimney-repair .duct-headline {
+  text-wrap: balance;
+}
+
+.chimney-repair .repair-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(14px, 2vw, 24px);
+}
+
+.chimney-repair .repair-three .repair-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.chimney-repair .repair-four .repair-grid {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.chimney-repair .repair-four .duct-card {
+  padding: 18px;
+}
+
+.chimney-repair .repair-tint {
+  background: var(--ap-blue-light);
+}
+
+.chimney-repair .repair-section a:not(.brand-button) {
+  color: var(--ap-navy);
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.chimney-repair .repair-section-note,
+.chimney-repair .repair-section .brand-actions {
+  margin-top: 24px;
+}
+
+.chimney-repair .repair-section .brand-actions {
+  justify-content: center;
+}
+
+.chimney-repair .repair-gallery {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  max-width: 900px;
+  margin-inline: auto;
+}
+
+.chimney-repair .repair-gallery small {
+  color: var(--ap-body);
+  font: 500 12px/1.4 Inter, Arial, sans-serif;
+}
+
+.chimney-repair #chimney-repair-form,
+.chimney-repair #book {
+  scroll-margin-top: 125px;
+}
+
+.chimney-repair #chimney-repair-form h2,
+.chimney-repair .repair-call,
+.chimney-repair .repair-call a {
+  color: white;
+}
+
+.chimney-repair .duct-booking-copy {
+  max-width: 62ch;
+}
+
+.chimney-repair .repair-call {
+  margin: 0;
+  text-align: center;
+}
+
+.chimney-repair .repair-call a {
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+@media (max-width: 900px) {
+  .chimney-repair .repair-four .repair-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 760px) {
+  .chimney-repair .repair-three .repair-grid,
+  .chimney-repair .repair-gallery {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .chimney-repair .repair-section .repair-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+.chimney-repair .repair-call a {
+  display: inline-block;
+}
+
+.chimney-repair .repair-service-photo {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+  object-position: center 38%;
+
+}
+
+.chimney-repair .repair-process-icon {
+  flex: 0 0 44px;
+  align-self: flex-start;
+}
+
+.chimney-repair .duct-technician-carousel {
+  max-width: 680px;
+}
+
+.chimney-repair .duct-technician-track {
+  grid-auto-columns: 100%;
+}
+
+.chimney-repair .repair-comparison-photo {
+  position: relative;
+  align-self: stretch;
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+.chimney-repair .repair-comparison-photo img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 58% center;
+}
+
+.chimney-repair .repair-options {
+  display: grid;
+  gap: 14px;
+}
+
+.chimney-repair .repair-options p + a {
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.chimney-repair #repair-or-rebuild {
+  scroll-margin-top: 120px;
+}
+
+@media (max-width: 767px) {
+  .chimney-repair .repair-comparison-photo {
+    aspect-ratio: 1 / 1;
+  }
+
+  .chimney-repair .repair-comparison {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+.chimney-repair .repair-grid .repair-photo-card {
+  padding: 0;
+  overflow: hidden;
+}
+
+.chimney-repair .repair-card-copy {
+  padding: clamp(16px, 2vw, 24px);
+}
+
+.repair-footer .ap-footer-pre {
+  display: none;
+}
+
+.chimney-repair #service-areas {
+  padding-block: clamp(28px, 3vw, 42px);
+}
+
+.chimney-repair #service-areas .area-layout {
+  gap: 24px;
+}
+
+.chimney-repair .repair-steps {
+  padding: 0;
+  list-style: none;
+}
+
+.chimney-repair .repair-photo-card {
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgb(11 45 91 / 10%);
+}
+
+.chimney-repair .repair-card-copy {
+  border-top: 3px solid var(--ap-teal);
+}
+
+.chimney-repair .repair-photo-card:focus-within {
+  border-color: var(--ap-teal);
+}
+
+.chimney-repair #repair-types {
+  scroll-margin-top: 120px;
+}
+
+.chimney-repair .repair-steps .step-number {
+  color: var(--ap-navy);
+}
+
+@media (min-width: 960px) {
+  .chimney-repair .duct-hero .duct-headline {
+    max-width: none;
+    font-size: clamp(30px, 3.3vw, 44px);
+  }
+}
+
+.chimney-repair .repair-type-grid .repair-service-photo {
+  height: clamp(132px, 16vw, 190px);
+}
+
+.chimney-repair .repair-type-grid .repair-card-copy {
+  padding: 18px;
+}
+
+@media (min-width: 1100px) {
+  .chimney-repair .repair-type-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 16px;
+  }
+
+  .chimney-repair .repair-type-grid h3 {
+    min-height: 2.4em;
+  }
+}
+
+@media (max-width: 767px) {
+  .chimney-repair .repair-type-grid .repair-photo-card {
+    container-type: inline-size;
+  }
+
+  .chimney-repair .repair-type-grid .repair-service-photo {
+    width: 100%;
+    height: 100cqw;
+    aspect-ratio: 1;
+    object-fit: cover;
+  }
+}
