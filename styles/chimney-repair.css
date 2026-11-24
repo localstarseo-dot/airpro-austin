@@ -51,12 +51,12 @@
   font: 500 12px/1.4 Inter, Arial, sans-serif;
 }
 
-.chimney-repair #chimney-repair-form,
+.chimney-repair .duct-booking,
 .chimney-repair #book {
   scroll-margin-top: 125px;
 }
 
-.chimney-repair #chimney-repair-form h2,
+.chimney-repair .duct-booking h2,
 .chimney-repair .repair-call,
 .chimney-repair .repair-call a {
   color: white;
